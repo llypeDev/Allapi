@@ -2,7 +2,7 @@
   "an.cte.distribuicao_dfe@homologacao": {
     "url": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
     "url_contrato": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -22,7 +22,7 @@
   "an.cte.distribuicao_dfe@producao": {
     "url": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
     "url_contrato": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -42,7 +42,7 @@
   "an.nfe.distribuicao_dfe@homologacao": {
     "url": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
     "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.299Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -62,7 +62,7 @@
   "an.nfe.distribuicao_dfe@producao": {
     "url": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
     "url_contrato": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.296Z",
+    "verificado_em": "2026-11-10T04:46:47.968Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -82,7 +82,7 @@
   "an.nfe.recepcao_evento@homologacao": {
     "url": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.555Z",
+    "verificado_em": "2026-11-10T04:46:50.545Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -102,7 +102,7 @@
   "an.nfe.recepcao_evento@producao": {
     "url": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -122,7 +122,7 @@
   "gnre.gnre.config_uf@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.089Z",
+    "verificado_em": "2026-11-10T04:46:53.111Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -142,7 +142,7 @@
   "gnre.gnre.config_uf@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.757Z",
+    "verificado_em": "2026-11-10T04:46:54.063Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -162,7 +162,7 @@
   "gnre.gnre.lote_recepcao@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -182,7 +182,7 @@
   "gnre.gnre.lote_recepcao@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -202,7 +202,7 @@
   "gnre.gnre.resultado_lote@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.632Z",
+    "verificado_em": "2026-11-10T04:46:50.999Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -222,7 +222,7 @@
   "gnre.gnre.resultado_lote@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.816Z",
+    "verificado_em": "2026-11-10T04:46:50.785Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -242,7 +242,7 @@
   "svan.nfe.autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.496Z",
+    "verificado_em": "2026-11-10T04:46:50.612Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -262,7 +262,7 @@
   "svan.nfe.autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:09.300Z",
+    "verificado_em": "2026-11-10T04:46:47.971Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -282,7 +282,7 @@
   "svan.nfe.consulta_protocolo@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.096Z",
+    "verificado_em": "2026-11-10T04:46:54.689Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -302,7 +302,7 @@
   "svan.nfe.consulta_protocolo@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.863Z",
+    "verificado_em": "2026-11-10T04:46:53.726Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -322,7 +322,7 @@
   "svan.nfe.inutilizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.157Z",
+    "verificado_em": "2026-11-10T04:46:56.259Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -342,7 +342,7 @@
   "svan.nfe.inutilizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.930Z",
+    "verificado_em": "2026-11-10T04:46:55.465Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -362,7 +362,7 @@
   "svan.nfe.recepcao_evento@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.050Z",
+    "verificado_em": "2026-11-10T04:46:59.236Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -382,7 +382,7 @@
   "svan.nfe.recepcao_evento@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.545Z",
+    "verificado_em": "2026-11-10T04:46:58.937Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -402,7 +402,7 @@
   "svan.nfe.ret_autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.699Z",
+    "verificado_em": "2026-11-10T04:46:53.238Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -422,7 +422,7 @@
   "svan.nfe.ret_autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:13.301Z",
+    "verificado_em": "2026-11-10T04:46:51.439Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -442,7 +442,7 @@
   "svan.nfe.status_servico@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.974Z",
+    "verificado_em": "2026-11-10T04:46:57.829Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -462,7 +462,7 @@
   "svan.nfe.status_servico@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.312Z",
+    "verificado_em": "2026-11-10T04:46:57.368Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -482,7 +482,7 @@
   "svc-an.nfe.autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.969Z",
+    "verificado_em": "2026-11-10T04:47:00.639Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -502,7 +502,7 @@
   "svc-an.nfe.autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.484Z",
+    "verificado_em": "2026-11-10T04:47:00.350Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -522,7 +522,7 @@
   "svc-an.nfe.consulta_protocolo@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.461Z",
+    "verificado_em": "2026-11-10T04:47:02.605Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -542,7 +542,7 @@
   "svc-an.nfe.consulta_protocolo@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.435Z",
+    "verificado_em": "2026-11-10T04:47:02.822Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -562,7 +562,7 @@
   "svc-an.nfe.inutilizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:25.604Z",
+    "verificado_em": "2026-11-10T04:47:03.687Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -582,7 +582,7 @@
   "svc-an.nfe.inutilizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:24.852Z",
+    "verificado_em": "2026-11-10T04:47:04.637Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -602,7 +602,7 @@
   "svc-an.nfe.recepcao_evento@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:28.362Z",
+    "verificado_em": "2026-11-10T04:47:06.070Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -622,7 +622,7 @@
   "svc-an.nfe.recepcao_evento@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:27.391Z",
+    "verificado_em": "2026-11-10T04:47:06.453Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -642,7 +642,7 @@
   "svc-an.nfe.ret_autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.520Z",
+    "verificado_em": "2026-11-10T04:47:01.531Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -662,7 +662,7 @@
   "svc-an.nfe.ret_autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.852Z",
+    "verificado_em": "2026-11-10T04:47:01.594Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -682,7 +682,7 @@
   "svc-an.nfe.status_servico@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:27.297Z",
+    "verificado_em": "2026-11-10T04:47:05.159Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -702,7 +702,7 @@
   "svc-an.nfe.status_servico@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:25.791Z",
+    "verificado_em": "2026-11-10T04:47:05.546Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -722,7 +722,7 @@
   "svc-rs.nfe.autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.727Z",
+    "verificado_em": "2026-11-10T04:46:50.779Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -743,7 +743,7 @@
   "svc-rs.nfe.autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.668Z",
+    "verificado_em": "2026-11-10T04:46:50.709Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -764,7 +764,7 @@
   "svc-rs.nfe.consulta_protocolo@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.879Z",
+    "verificado_em": "2026-11-10T04:46:53.879Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -785,7 +785,7 @@
   "svc-rs.nfe.consulta_protocolo@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.609Z",
+    "verificado_em": "2026-11-10T04:46:53.642Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -806,7 +806,7 @@
   "svc-rs.nfe.recepcao_evento@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.533Z",
+    "verificado_em": "2026-11-10T04:46:55.235Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -827,7 +827,7 @@
   "svc-rs.nfe.recepcao_evento@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.874Z",
+    "verificado_em": "2026-11-10T04:46:55.058Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -848,7 +848,7 @@
   "svc-rs.nfe.ret_autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.041Z",
+    "verificado_em": "2026-11-10T04:46:52.504Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -869,7 +869,7 @@
   "svc-rs.nfe.ret_autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:13.908Z",
+    "verificado_em": "2026-11-10T04:46:52.262Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -890,7 +890,7 @@
   "svc-rs.nfe.status_servico@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.859Z",
+    "verificado_em": "2026-11-10T04:46:54.553Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -911,7 +911,7 @@
   "svc-rs.nfe.status_servico@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.268Z",
+    "verificado_em": "2026-11-10T04:46:54.429Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -932,7 +932,7 @@
   "svrs.bpe.consulta@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.551Z",
+    "verificado_em": "2026-11-10T04:47:01.659Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -953,7 +953,7 @@
   "svrs.bpe.consulta@producao": {
     "url": "https://bpe.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.143Z",
+    "verificado_em": "2026-11-10T04:47:01.429Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -974,7 +974,7 @@
   "svrs.bpe.qrcode@producao": {
     "url": "https://dfe-portal.svrs.rs.gov.br/bpe/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:25.399Z",
+    "verificado_em": "2026-11-10T04:47:04.759Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -993,7 +993,7 @@
   "svrs.bpe.recepcao_evento@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.904Z",
+    "verificado_em": "2026-11-10T04:47:03.126Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1014,7 +1014,7 @@
   "svrs.bpe.recepcao_evento@producao": {
     "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.399Z",
+    "verificado_em": "2026-11-10T04:47:02.675Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1035,7 +1035,7 @@
   "svrs.bpe.recepcao_ta@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.872Z",
+    "verificado_em": "2026-11-10T04:47:00.940Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1056,7 +1056,7 @@
   "svrs.bpe.recepcao_ta@producao": {
     "url": "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.508Z",
+    "verificado_em": "2026-11-10T04:47:00.808Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1077,7 +1077,7 @@
   "svrs.bpe.recepcao_tm@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.187Z",
+    "verificado_em": "2026-11-10T04:47:00.269Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1098,7 +1098,7 @@
   "svrs.bpe.recepcao_tm@producao": {
     "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.878Z",
+    "verificado_em": "2026-11-10T04:47:00.171Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1119,7 +1119,7 @@
   "svrs.bpe.recepcao@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.517Z",
+    "verificado_em": "2026-11-10T04:46:59.593Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1140,7 +1140,7 @@
   "svrs.bpe.recepcao@producao": {
     "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.246Z",
+    "verificado_em": "2026-11-10T04:46:59.562Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1161,7 +1161,7 @@
   "svrs.bpe.status_servico@homologacao": {
     "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx",
     "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.246Z",
+    "verificado_em": "2026-11-10T04:47:02.448Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1182,7 +1182,7 @@
   "svrs.bpe.status_servico@producao": {
     "url": "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx",
     "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.797Z",
+    "verificado_em": "2026-11-10T04:47:02.049Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1203,7 +1203,7 @@
   "svrs.consulta_cadastro.consulta_cadastro@producao": {
     "url": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
     "url_contrato": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.431Z",
+    "verificado_em": "2026-11-10T04:46:54.215Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1224,7 +1224,7 @@
   "svrs.cte.consulta@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.902Z",
+    "verificado_em": "2026-11-10T04:46:57.890Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1245,7 +1245,7 @@
   "svrs.cte.consulta@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.630Z",
+    "verificado_em": "2026-11-10T04:46:57.748Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1266,7 +1266,7 @@
   "svrs.cte.qrcode@producao": {
     "url": "https://dfe-portal.svrs.rs.gov.br/cte/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:23.500Z",
+    "verificado_em": "2026-11-10T04:47:02.955Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -1285,7 +1285,7 @@
   "svrs.cte.recepcao_evento@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.301Z",
+    "verificado_em": "2026-11-10T04:46:59.396Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1306,7 +1306,7 @@
   "svrs.cte.recepcao_evento@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.876Z",
+    "verificado_em": "2026-11-10T04:46:58.985Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1327,7 +1327,7 @@
   "svrs.cte.recepcao_gtve@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.212Z",
+    "verificado_em": "2026-11-10T04:46:57.198Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1348,7 +1348,7 @@
   "svrs.cte.recepcao_gtve@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.050Z",
+    "verificado_em": "2026-11-10T04:46:57.120Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1369,7 +1369,7 @@
   "svrs.cte.recepcao_os@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.535Z",
+    "verificado_em": "2026-11-10T04:46:56.435Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1390,7 +1390,7 @@
   "svrs.cte.recepcao_os@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.328Z",
+    "verificado_em": "2026-11-10T04:46:56.280Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1411,7 +1411,7 @@
   "svrs.cte.recepcao_simp@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.855Z",
+    "verificado_em": "2026-11-10T04:46:55.753Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1432,7 +1432,7 @@
   "svrs.cte.recepcao_simp@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.710Z",
+    "verificado_em": "2026-11-10T04:46:55.663Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1453,7 +1453,7 @@
   "svrs.cte.recepcao_sinc@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.172Z",
+    "verificado_em": "2026-11-10T04:46:55.054Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1474,7 +1474,7 @@
   "svrs.cte.recepcao_sinc@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.068Z",
+    "verificado_em": "2026-11-10T04:46:55.031Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1495,7 +1495,7 @@
   "svrs.cte.status_servico@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.603Z",
+    "verificado_em": "2026-11-10T04:46:58.720Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1516,7 +1516,7 @@
   "svrs.cte.status_servico@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.258Z",
+    "verificado_em": "2026-11-10T04:46:58.378Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1537,7 +1537,7 @@
   "svrs.mdfe.cons_nao_enc@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.854Z",
+    "verificado_em": "2026-11-10T04:47:00.136Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1558,7 +1558,7 @@
   "svrs.mdfe.cons_nao_enc@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.207Z",
+    "verificado_em": "2026-11-10T04:46:59.561Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1579,7 +1579,7 @@
   "svrs.mdfe.consulta@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.822Z",
+    "verificado_em": "2026-11-10T04:46:58.045Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1600,7 +1600,7 @@
   "svrs.mdfe.consulta@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.298Z",
+    "verificado_em": "2026-11-10T04:46:57.142Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1621,7 +1621,7 @@
   "svrs.mdfe.distribuicao_dfe@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.538Z",
+    "verificado_em": "2026-11-10T04:47:00.825Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1642,7 +1642,7 @@
   "svrs.mdfe.distribuicao_dfe@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.829Z",
+    "verificado_em": "2026-11-10T04:47:00.190Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1663,7 +1663,7 @@
   "svrs.mdfe.qrcode@producao": {
     "url": "https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:24.636Z",
+    "verificado_em": "2026-11-10T04:47:03.631Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -1682,7 +1682,7 @@
   "svrs.mdfe.recepcao_evento@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.185Z",
+    "verificado_em": "2026-11-10T04:46:59.429Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1703,7 +1703,7 @@
   "svrs.mdfe.recepcao_evento@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.585Z",
+    "verificado_em": "2026-11-10T04:46:58.383Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1724,7 +1724,7 @@
   "svrs.mdfe.recepcao_sinc@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.135Z",
+    "verificado_em": "2026-11-10T04:46:57.366Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1745,7 +1745,7 @@
   "svrs.mdfe.recepcao_sinc@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.668Z",
+    "verificado_em": "2026-11-10T04:46:56.354Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1766,7 +1766,7 @@
   "svrs.mdfe.status_servico@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.503Z",
+    "verificado_em": "2026-11-10T04:46:58.738Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1787,7 +1787,7 @@
   "svrs.mdfe.status_servico@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.932Z",
+    "verificado_em": "2026-11-10T04:46:57.751Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1808,7 +1808,7 @@
   "svrs.nf3e.consulta@homologacao": {
     "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx",
     "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.145Z",
+    "verificado_em": "2026-11-10T04:47:00.844Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1829,7 +1829,7 @@
   "svrs.nf3e.consulta@producao": {
     "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx",
     "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.602Z",
+    "verificado_em": "2026-11-10T04:47:00.761Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1850,7 +1850,7 @@
   "svrs.nf3e.qrcode@producao": {
     "url": "https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:26.097Z",
+    "verificado_em": "2026-11-10T04:47:05.419Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -1869,7 +1869,7 @@
   "svrs.nf3e.recepcao_evento@homologacao": {
     "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx",
     "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.539Z",
+    "verificado_em": "2026-11-10T04:47:02.434Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1890,7 +1890,7 @@
   "svrs.nf3e.recepcao_evento@producao": {
     "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx",
     "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.867Z",
+    "verificado_em": "2026-11-10T04:47:02.338Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1911,7 +1911,7 @@
   "svrs.nf3e.recepcao_sinc@homologacao": {
     "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx",
     "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.455Z",
+    "verificado_em": "2026-11-10T04:47:00.135Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1932,7 +1932,7 @@
   "svrs.nf3e.recepcao_sinc@producao": {
     "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx",
     "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.975Z",
+    "verificado_em": "2026-11-10T04:47:00.127Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1953,7 +1953,7 @@
   "svrs.nf3e.status_servico@homologacao": {
     "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx",
     "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.860Z",
+    "verificado_em": "2026-11-10T04:47:01.647Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1974,7 +1974,7 @@
   "svrs.nf3e.status_servico@producao": {
     "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx",
     "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.241Z",
+    "verificado_em": "2026-11-10T04:47:01.550Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1995,7 +1995,7 @@
   "svrs.nfce.autorizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:13.975Z",
+    "verificado_em": "2026-11-10T04:46:52.181Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2016,7 +2016,7 @@
   "svrs.nfce.autorizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:12.822Z",
+    "verificado_em": "2026-11-10T04:46:50.942Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2037,7 +2037,7 @@
   "svrs.nfce.consulta_protocolo@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.390Z",
+    "verificado_em": "2026-11-10T04:46:54.456Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2058,7 +2058,7 @@
   "svrs.nfce.consulta_protocolo@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.054Z",
+    "verificado_em": "2026-11-10T04:46:53.826Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2079,7 +2079,7 @@
   "svrs.nfce.inutilizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.067Z",
+    "verificado_em": "2026-11-10T04:46:55.148Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2100,7 +2100,7 @@
   "svrs.nfce.inutilizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:15.825Z",
+    "verificado_em": "2026-11-10T04:46:54.455Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2121,7 +2121,7 @@
   "svrs.nfce.recepcao_evento@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.434Z",
+    "verificado_em": "2026-11-10T04:46:56.693Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2142,7 +2142,7 @@
   "svrs.nfce.recepcao_evento@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.057Z",
+    "verificado_em": "2026-11-10T04:46:55.727Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2163,7 +2163,7 @@
   "svrs.nfce.ret_autorizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.689Z",
+    "verificado_em": "2026-11-10T04:46:53.698Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2184,7 +2184,7 @@
   "svrs.nfce.ret_autorizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:14.182Z",
+    "verificado_em": "2026-11-10T04:46:52.721Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2205,7 +2205,7 @@
   "svrs.nfce.status_servico@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.747Z",
+    "verificado_em": "2026-11-10T04:46:55.998Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2226,7 +2226,7 @@
   "svrs.nfce.status_servico@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.441Z",
+    "verificado_em": "2026-11-10T04:46:55.079Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2247,7 +2247,7 @@
   "svrs.nfcom.consulta@homologacao": {
     "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx",
     "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.904Z",
+    "verificado_em": "2026-11-10T04:47:02.436Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2268,7 +2268,7 @@
   "svrs.nfcom.consulta@producao": {
     "url": "https://nfcom.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx",
     "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.136Z",
+    "verificado_em": "2026-11-10T04:47:01.604Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2289,7 +2289,7 @@
   "svrs.nfcom.qrcode@producao": {
     "url": "https://dfe-portal.svrs.rs.gov.br/nfcom/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:27.066Z",
+    "verificado_em": "2026-11-10T04:47:06.117Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -2308,7 +2308,7 @@
   "svrs.nfcom.recepcao_evento@homologacao": {
     "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx",
     "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:24.640Z",
+    "verificado_em": "2026-11-10T04:47:04.411Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2329,7 +2329,7 @@
   "svrs.nfcom.recepcao_evento@producao": {
     "url": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx",
     "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.407Z",
+    "verificado_em": "2026-11-10T04:47:02.989Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2350,7 +2350,7 @@
   "svrs.nfcom.recepcao@homologacao": {
     "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx",
     "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.212Z",
+    "verificado_em": "2026-11-10T04:47:01.640Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2371,7 +2371,7 @@
   "svrs.nfcom.recepcao@producao": {
     "url": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx",
     "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:21.508Z",
+    "verificado_em": "2026-11-10T04:47:00.816Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2392,7 +2392,7 @@
   "svrs.nfcom.status_servico@homologacao": {
     "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx",
     "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:23.590Z",
+    "verificado_em": "2026-11-10T04:47:03.134Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2413,7 +2413,7 @@
   "svrs.nfcom.status_servico@producao": {
     "url": "https://nfcom.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx",
     "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:22.782Z",
+    "verificado_em": "2026-11-10T04:47:02.365Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2434,7 +2434,7 @@
   "svrs.nfe.autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.214Z",
+    "verificado_em": "2026-11-10T04:46:55.996Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2455,7 +2455,7 @@
   "svrs.nfe.autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:16.487Z",
+    "verificado_em": "2026-11-10T04:46:55.709Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2476,7 +2476,7 @@
   "svrs.nfe.consulta_protocolo@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.770Z",
+    "verificado_em": "2026-11-10T04:46:57.354Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2497,7 +2497,7 @@
   "svrs.nfe.consulta_protocolo@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.725Z",
+    "verificado_em": "2026-11-10T04:46:57.097Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2518,7 +2518,7 @@
   "svrs.nfe.inutilizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.449Z",
+    "verificado_em": "2026-11-10T04:46:58.030Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2539,7 +2539,7 @@
   "svrs.nfe.inutilizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.342Z",
+    "verificado_em": "2026-11-10T04:46:57.683Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2560,7 +2560,7 @@
   "svrs.nfe.recepcao_evento@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.827Z",
+    "verificado_em": "2026-11-10T04:46:59.393Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2581,7 +2581,7 @@
   "svrs.nfe.recepcao_evento@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:19.611Z",
+    "verificado_em": "2026-11-10T04:46:58.931Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2602,7 +2602,7 @@
   "svrs.nfe.ret_autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.092Z",
+    "verificado_em": "2026-11-10T04:46:56.678Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2623,7 +2623,7 @@
   "svrs.nfe.ret_autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:17.101Z",
+    "verificado_em": "2026-11-10T04:46:56.334Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2644,7 +2644,7 @@
   "svrs.nfe.status_servico@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:20.143Z",
+    "verificado_em": "2026-11-10T04:46:58.711Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2665,7 +2665,7 @@
   "svrs.nfe.status_servico@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:18.971Z",
+    "verificado_em": "2026-11-10T04:46:58.305Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2686,7 +2686,7 @@
   "svsp.cte.consulta@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:29.294Z",
+    "verificado_em": "2026-11-10T04:47:10.730Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2707,7 +2707,7 @@
   "svsp.cte.consulta@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:29.264Z",
+    "verificado_em": "2026-11-10T04:47:08.859Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2728,7 +2728,7 @@
   "svsp.cte.qrcode@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeConsulta/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:32.966Z",
+    "verificado_em": "2026-11-10T04:47:13.963Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -2748,7 +2748,7 @@
   "svsp.cte.qrcode@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeConsulta/qrCode",
     "url_contrato": null,
-    "verificado_em": "2026-11-10T04:45:32.611Z",
+    "verificado_em": "2026-11-10T04:47:12.239Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "http_200_sem_contrato",
@@ -2768,7 +2768,7 @@
   "svsp.cte.recepcao_evento@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:31.741Z",
+    "verificado_em": "2026-11-10T04:47:12.883Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2789,7 +2789,7 @@
   "svsp.cte.recepcao_evento@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:31.383Z",
+    "verificado_em": "2026-11-10T04:47:11.018Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2810,7 +2810,7 @@
   "svsp.cte.recepcao_gtve@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:28.063Z",
+    "verificado_em": "2026-11-10T04:47:07.414Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2831,7 +2831,7 @@
   "svsp.cte.recepcao_gtve@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:28.022Z",
+    "verificado_em": "2026-11-10T04:47:07.636Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2852,7 +2852,7 @@
   "svsp.cte.recepcao_os@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:26.799Z",
+    "verificado_em": "2026-11-10T04:47:06.352Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2873,7 +2873,7 @@
   "svsp.cte.recepcao_os@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:26.789Z",
+    "verificado_em": "2026-11-10T04:47:06.561Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2894,7 +2894,7 @@
   "svsp.cte.recepcao_simp@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:25.611Z",
+    "verificado_em": "2026-11-10T04:47:05.132Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2915,7 +2915,7 @@
   "svsp.cte.recepcao_simp@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:25.570Z",
+    "verificado_em": "2026-11-10T04:47:05.338Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2936,7 +2936,7 @@
   "svsp.cte.recepcao_sinc@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:24.035Z",
+    "verificado_em": "2026-11-10T04:47:03.273Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2957,7 +2957,7 @@
   "svsp.cte.recepcao_sinc@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:24.025Z",
+    "verificado_em": "2026-11-10T04:47:03.123Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2978,7 +2978,7 @@
   "svsp.cte.status_servico@homologacao": {
     "url": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx",
     "url_contrato": "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:30.217Z",
+    "verificado_em": "2026-11-10T04:47:11.956Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -2999,7 +2999,7 @@
   "svsp.cte.status_servico@producao": {
     "url": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx",
     "url_contrato": "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:45:30.325Z",
+    "verificado_em": "2026-11-10T04:47:10.084Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",

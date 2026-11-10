@@ -1,7 +1,7 @@
 {
   "cte-portal-homologacao": {
     "url": "https://hom.cte.fazenda.gov.br/portal/webServices.aspx",
-    "coletado_em": "2026-11-10T04:45:04.528Z",
+    "coletado_em": "2026-11-10T04:46:42.519Z",
     "ok": true,
     "status_http": 200,
     "bytes": 41287,
@@ -63,7 +63,7 @@
   },
   "cte-portal-producao": {
     "url": "https://www.cte.fazenda.gov.br/portal/webServices.aspx",
-    "coletado_em": "2026-11-10T04:45:04.528Z",
+    "coletado_em": "2026-11-10T04:46:42.519Z",
     "ok": true,
     "status_http": 200,
     "bytes": 40027,
@@ -126,7 +126,7 @@
   },
   "gnre-automacao": {
     "url": "https://www.gnre.pe.gov.br/gnre/portal/automacao.jsp",
-    "coletado_em": "2026-11-10T04:45:07.749Z",
+    "coletado_em": "2026-11-10T04:46:45.851Z",
     "ok": false,
     "status_http": 403,
     "erro": "HTTP 403",
@@ -134,7 +134,7 @@
   },
   "gnre-automacao-homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnre/portal/automacao.jsp",
-    "coletado_em": "2026-11-10T04:45:07.981Z",
+    "coletado_em": "2026-11-10T04:46:46.630Z",
     "ok": false,
     "status_http": 403,
     "erro": "HTTP 403",
@@ -142,7 +142,7 @@
   },
   "nfe-portal-homologacao": {
     "url": "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo=",
-    "coletado_em": "2026-11-10T04:45:04.527Z",
+    "coletado_em": "2026-11-10T04:46:42.518Z",
     "ok": true,
     "status_http": 200,
     "bytes": 56325,
@@ -254,7 +254,7 @@
   },
   "nfe-portal-producao": {
     "url": "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo=",
-    "coletado_em": "2026-11-10T04:45:04.521Z",
+    "coletado_em": "2026-11-10T04:46:42.512Z",
     "ok": true,
     "status_http": 200,
     "bytes": 56229,
@@ -368,7 +368,7 @@
   },
   "svrs-bpe": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos",
-    "coletado_em": "2026-11-10T04:45:06.975Z",
+    "coletado_em": "2026-11-10T04:46:45.456Z",
     "ok": true,
     "status_http": 200,
     "bytes": 62542,
@@ -438,7 +438,7 @@
   },
   "svrs-cte": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos",
-    "coletado_em": "2026-11-10T04:45:06.383Z",
+    "coletado_em": "2026-11-10T04:46:44.537Z",
     "ok": true,
     "status_http": 200,
     "bytes": 70357,
@@ -540,7 +540,7 @@
   },
   "svrs-mdfe": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos",
-    "coletado_em": "2026-11-10T04:45:06.747Z",
+    "coletado_em": "2026-11-10T04:46:44.642Z",
     "ok": true,
     "status_http": 200,
     "bytes": 33960,
@@ -563,7 +563,7 @@
   },
   "svrs-nf3e": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos",
-    "coletado_em": "2026-11-10T04:45:07.119Z",
+    "coletado_em": "2026-11-10T04:46:45.790Z",
     "ok": true,
     "status_http": 200,
     "bytes": 54985,
@@ -619,7 +619,7 @@
   },
   "svrs-nfce": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos",
-    "coletado_em": "2026-11-10T04:45:05.942Z",
+    "coletado_em": "2026-11-10T04:46:44.536Z",
     "ok": true,
     "status_http": 200,
     "bytes": 76209,
@@ -731,7 +731,7 @@
   },
   "svrs-nfcom": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos",
-    "coletado_em": "2026-11-10T04:45:07.433Z",
+    "coletado_em": "2026-11-10T04:46:45.793Z",
     "ok": true,
     "status_http": 200,
     "bytes": 47250,
@@ -778,7 +778,7 @@
   },
   "svrs-nfe": {
     "url": "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos",
-    "coletado_em": "2026-11-10T04:45:05.761Z",
+    "coletado_em": "2026-11-10T04:46:43.854Z",
     "ok": true,
     "status_http": 200,
     "bytes": 104963,
