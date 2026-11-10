@@ -21,6 +21,11 @@ fontes:
     descricao: Relação de serviços web do CT-e, produção
     url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
 
+  - id: cte-portal-homologacao
+    orgao: Portal Nacional do CT-e
+    descricao: Relação de serviços web do CT-e, homologação
+    url: "https://hom.cte.fazenda.gov.br/portal/webServices.aspx"
+
   - id: svrs-nfe
     orgao: SEFAZ Virtual RS
     descricao: Serviços NF-e da SVRS
@@ -75,3 +80,5 @@ ignorar:
     motivo: Formulário de atendimento ao contribuinte, não é serviço.
   - contem: "//www.serpro.gov.br/menu/suporte"
     motivo: Central de suporte do SERPRO, não é serviço.
+  - contem: "//www.nfe.fazenda.gov.br/agendamentosvc"
+    motivo: Item de menu do portal com a agenda de ativação da SVC-AN, não é endpoint de integração.

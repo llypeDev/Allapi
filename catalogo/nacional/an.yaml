@@ -4,56 +4,56 @@ nome: Ambiente Nacional (AN)
 mantenedor: Receita Federal do Brasil
 status: em_andamento
 notas: >-
-  Semente inicial: URLs candidatas registradas de memória. O Ambiente Nacional trocou de endereços em 2022;
-  confirmar tudo na relação oficial antes de fechar.
-atende:
-  - item: documentos_fiscais.nfe
-    ufs: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
-    confirmado: false
-    nota: Serviços nacionais, usados por contribuintes de qualquer UF.
-  - item: documentos_fiscais.cte
-    ufs: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
-    confirmado: false
-    nota: Serviços nacionais, usados por contribuintes de qualquer UF.
+  Serviços nacionais da NF-e e do CT-e, usados por contribuintes de qualquer UF.
+  Conferidos contra os portais nacionais da NF-e (produção e homologação) e do CT-e (produção), coleta de 2026-11-10.
 servicos:
   - id: an.nfe.distribuicao_dfe
     item: documentos_fiscais.nfe
     nome: NFeDistribuicaoDFe
-    descricao: Download de NF-e e eventos emitidos contra o CNPJ ou CPF do interessado
-    versao: "1.01"
-    protocolo: soap
-    autenticacao: certificado_icp
-    endpoints:
-      - { ambiente: producao, url: "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx" }
-      - { ambiente: homologacao, url: "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx" }
-    origem:
-      tipo: memoria
-      registrado_em: 2026-11-10
-
-  - id: an.nfe.recepcao_evento
-    item: documentos_fiscais.nfe
-    nome: NFeRecepcaoEvento (Ambiente Nacional)
-    descricao: Manifestação do destinatário e EPEC
-    versao: "4.00"
-    protocolo: soap
-    autenticacao: certificado_icp
-    endpoints:
-      - { ambiente: producao, url: "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
-      - { ambiente: homologacao, url: "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
-    origem:
-      tipo: memoria
-      registrado_em: 2026-11-10
-
-  - id: an.cte.distribuicao_dfe
-    item: documentos_fiscais.cte
-    nome: CTeDistribuicaoDFe
-    descricao: Download de CT-e emitidos contra o CNPJ ou CPF do interessado
+    descricao: "Download de NF-e e eventos emitidos contra o CNPJ ou CPF do interessado"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx" }
-      - { ambiente: homologacao, url: "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx" }
+      - { ambiente: producao, url: "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+
+  - id: an.nfe.recepcao_evento
+    item: documentos_fiscais.nfe
+    nome: RecepcaoEvento
+    descricao: "Manifestação do destinatário e EPEC"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+
+  - id: an.cte.distribuicao_dfe
+    item: documentos_fiscais.cte
+    nome: CTeDistribuicaoDFe
+    descricao: "Download de CT-e emitidos contra o CNPJ ou CPF do interessado"
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+    notas: "Endereço de produção conferido no Portal Nacional do CT-e. O de homologação foi registrado de memória e ainda não tem fonte oficial."

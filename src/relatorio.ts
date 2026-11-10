@@ -71,7 +71,7 @@ function verificar(arquivo: ArquivoCatalogo, servico: Servico, endpoint: Endpoin
   else contrato = "ausente";
   if (contrato === "ausente") {
     const dica = RECUSA_POR_CREDENCIAL.has(sondaValida!.diagnostico)
-      ? "; o servidor recusou por credencial: marcar contrato_restrito se confirmado"
+      ? "; se a recusa for por falta de certificado, marcar contrato_restrito"
       : "";
     pendencias.push(`contrato não obtido (${sondaValida!.diagnostico})${dica}`);
   }

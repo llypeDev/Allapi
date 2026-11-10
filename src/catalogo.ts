@@ -46,7 +46,14 @@ export interface ArquivoCatalogo {
   mantenedor?: string;
   uf?: string;
   status?: "em_andamento" | "fechado";
-  atende?: { item: string; ufs: string[]; papel?: string; confirmado?: boolean; nota?: string }[];
+  atende?: {
+    item: string;
+    ufs: string[];
+    papel?: string;
+    confirmado?: boolean;
+    evidencia?: { url: string; consultado_em: string; nota?: string };
+    nota?: string;
+  }[];
   checklist?: Record<string, ItemChecklist>;
   servicos: Servico[];
   notas?: string;
@@ -135,7 +142,6 @@ export function verificarSemantica(arquivos: ArquivoCatalogo[], itens: string[])
   const conjuntoItens = new Set(itens);
   const idsArquivos = new Map<string, string>();
   const idsServicos = new Map<string, string>();
-  const nacionais = new Set(arquivos.filter((a) => a.escopo === "nacional").map((a) => a.id));
 
   for (const a of arquivos) {
     const esperado = a.caminho.replace(/\\/g, "/").split("/").pop()!.replace(/\.yaml$/, "");
@@ -176,6 +182,8 @@ export function verificarSemantica(arquivos: ArquivoCatalogo[], itens: string[])
 
     for (const at of a.atende ?? []) {
       if (!conjuntoItens.has(at.item)) erros.push(`${a.caminho}: atende.item "${at.item}" não existe na taxonomia`);
+      if (at.confirmado && !at.evidencia) erros.push(`${a.caminho}: atende ${at.item} está confirmado sem evidência`);
+      if (at.confirmado && at.ufs.length === 0) erros.push(`${a.caminho}: atende ${at.item} está confirmado sem nenhuma UF`);
     }
 
     if (a.escopo === "uf") {
@@ -189,7 +197,16 @@ export function verificarSemantica(arquivos: ArquivoCatalogo[], itens: string[])
           continue;
         }
         for (const ref of r.compartilhado_com ?? []) {
-          if (!nacionais.has(ref)) erros.push(`${a.caminho}: ${item} compartilha com "${ref}", que não existe em catalogo/nacional`);
+          const dep = arquivos.find((x) => x.escopo === "nacional" && x.id === ref);
+          if (!dep) {
+            erros.push(`${a.caminho}: ${item} compartilha com "${ref}", que não existe em catalogo/nacional`);
+            continue;
+          }
+          // Se o ambiente declara quais UFs atende nesse item, o estado precisa estar na relação.
+          const relacoes = (dep.atende ?? []).filter((at) => at.item === item && at.ufs.length > 0);
+          if (relacoes.length > 0 && a.uf && !relacoes.some((at) => at.ufs.includes(a.uf!))) {
+            erros.push(`${a.caminho}: ${item} compartilha com "${ref}", mas ${a.uf} não está na relação de UFs que "${ref}" atende`);
+          }
         }
         const temServico = a.servicos.some((s) => s.item === item);
         if (r.resolucao === "proprio" && !temServico) {

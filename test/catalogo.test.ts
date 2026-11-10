@@ -119,6 +119,19 @@ describe("regras semânticas", () => {
     assert.ok(erros.some((e) => e.includes('"proprio" mas não há serviço')));
   });
 
+  it("rejeita estado que compartilha um ambiente que não o atende", () => {
+    const ev = { url: "https://portal.exemplo.gov.br", consultado_em: "2026-01-01" };
+    const svrs = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], { atende: [{ item: ITENS[0]!, ufs: ["RJ"], confirmado: true, evidencia: ev }] });
+    assert.ok(verificarSemantica([svrs, estadoUf()], ITENS).some((e) => e.includes("SP não está na relação")));
+    const comSp = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], { atende: [{ item: ITENS[0]!, ufs: ["RJ", "SP"], confirmado: true, evidencia: ev }] });
+    assert.deepEqual(verificarSemantica([comSp, estadoUf()], ITENS), []);
+  });
+
+  it("não aceita relação de UFs confirmada sem evidência", () => {
+    const svrs = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], { atende: [{ item: ITENS[0]!, ufs: ["RJ"], confirmado: true }] });
+    assert.ok(verificarSemantica([svrs], ITENS).some((e) => e.includes("confirmado sem evidência")));
+  });
+
   it("rejeita arquivo de UF com id diferente da sigla", () => {
     const erros = verificarSemantica([estadoUf({ id: "saopaulo", caminho: "catalogo/uf/saopaulo.yaml" })], ITENS);
     assert.ok(erros.some((e) => e.includes('deve ter id "sp"')));
@@ -161,7 +174,9 @@ describe("gate", () => {
   const chave = "svrs.nfe.aut@producao";
 
   it("passa quando a URL é oficial, o servidor responde e o contrato foi obtido", () => {
-    const a = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], { atende: [{ item: ITENS[0]!, ufs: ["RJ"], confirmado: true }] });
+    const a = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], {
+      atende: [{ item: ITENS[0]!, ufs: ["RJ"], confirmado: true, evidencia: { url: "https://portal.exemplo.gov.br", consultado_em: "2026-01-01" } }],
+    });
     const g = analisar(montar([a]), { fontes: fonteCom(URL_A), sondas: { [chave]: sonda(URL_A) } }).gates[0]!;
     assert.deepEqual(g.pendencias, []);
     assert.equal(g.aprovado, true);

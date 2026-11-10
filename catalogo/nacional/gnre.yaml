@@ -10,12 +10,12 @@ atende:
   - item: arrecadacao.gnre
     ufs: []
     confirmado: false
-    nota: Relação de UFs que aceitam a GNRE por web service ainda não levantada.
+    nota: "Relação de UFs que aceitam a GNRE por web service ainda não levantada."
 servicos:
   - id: gnre.gnre.lote_recepcao
     item: arrecadacao.gnre
     nome: GnreLoteRecepcao
-    descricao: Envio de lote de guias para processamento
+    descricao: "Envio de lote de guias para processamento"
     versao: "2.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -31,7 +31,7 @@ servicos:
   - id: gnre.gnre.resultado_lote
     item: arrecadacao.gnre
     nome: GnreResultadoLote
-    descricao: Consulta do resultado do processamento do lote
+    descricao: "Consulta do resultado do processamento do lote"
     versao: "2.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -47,7 +47,7 @@ servicos:
   - id: gnre.gnre.config_uf
     item: arrecadacao.gnre
     nome: GnreConfigUF
-    descricao: Regras e campos exigidos por UF e por receita
+    descricao: "Regras e campos exigidos por UF e por receita"
     versao: "2.00"
     protocolo: soap
     autenticacao: certificado_icp

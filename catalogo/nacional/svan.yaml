@@ -4,21 +4,22 @@ nome: SEFAZ Virtual do Ambiente Nacional (SVAN)
 mantenedor: Receita Federal do Brasil
 status: em_andamento
 notas: >-
-  Serviços conferidos contra a Relação de Serviços Web do portal NF-e da SVRS (coleta de 2026-11-10),
-  que lista a SVAN nestes endereços em produção e homologação.
+  Serviços e relação de UFs conferidos no Portal Nacional da NF-e (coleta de 2026-11-10).
   Os endpoints respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.
-  Falta confirmar em fonte oficial quais UFs usam a SVAN.
 atende:
   - item: documentos_fiscais.nfe
     papel: autorizacao
     ufs: [MA]
-    confirmado: false
-    nota: Registrado de memória; conferir no Portal NF-e.
+    confirmado: true
+    evidencia:
+      url: "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+      consultado_em: 2026-11-10
+      nota: "Texto 'UF que utilizam a SVAN - Sefaz Virtual do Ambiente Nacional: MA'."
 servicos:
   - id: svan.nfe.autorizacao
     item: documentos_fiscais.nfe
     nome: NFeAutorizacao
-    descricao: Envio de lote de NF-e para autorização
+    descricao: "Envio de lote de NF-e para autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -29,12 +30,13 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svan.nfe.ret_autorizacao
     item: documentos_fiscais.nfe
     nome: NFeRetAutorizacao
-    descricao: Consulta do resultado do lote enviado
+    descricao: "Consulta do resultado do lote enviado"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -45,12 +47,13 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svan.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
-    nome: NFeConsultaProtocolo
-    descricao: Consulta da situação de uma NF-e pela chave
+    nome: NfeConsultaProtocolo
+    descricao: "Consulta da situação de uma NF-e pela chave"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -61,12 +64,13 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svan.nfe.inutilizacao
     item: documentos_fiscais.nfe
-    nome: NFeInutilizacao
-    descricao: Inutilização de faixa de numeração
+    nome: NfeInutilizacao
+    descricao: "Inutilização de faixa de numeração"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -77,12 +81,13 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svan.nfe.status_servico
     item: documentos_fiscais.nfe
-    nome: NFeStatusServico
-    descricao: Situação do serviço de autorização
+    nome: NfeStatusServico
+    descricao: "Situação do serviço de autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -93,12 +98,13 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svan.nfe.recepcao_evento
     item: documentos_fiscais.nfe
-    nome: NFeRecepcaoEvento
-    descricao: Registro de eventos
+    nome: RecepcaoEvento
+    descricao: "Registro de eventos"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -109,4 +115,5 @@ servicos:
       tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="

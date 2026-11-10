@@ -4,23 +4,24 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 
 - Última coleta de fontes oficiais: 2026-11-10
 - Última sonda: 2026-11-10
-- Endpoints no catálogo: 128
-- Confirmados em fonte oficial: 111
+- Endpoints no catálogo: 146
+- Confirmados em fonte oficial: 140
 - Servidor respondeu: 118
 - Contrato obtido: 0
-- Aprovados em tudo: 106
-- URLs oficiais fora do catálogo: 429
+- Aprovados em tudo: 112
+- URLs oficiais fora do catálogo: 413
 
 ## Arquivos
 
 | Arquivo | Escopo | Status | Endpoints | Aprovados | Pendências | Gate |
 |---|---|---|---:|---:|---:|---|
-| an | nacional | em_andamento | 6 | 0 | 10 | não passa |
+| an | nacional | em_andamento | 6 | 6 | 1 | não passa |
 | gnre | nacional | em_andamento | 6 | 0 | 13 | não passa |
-| svan | nacional | em_andamento | 12 | 12 | 1 | não passa |
-| svc-an | nacional | em_andamento | 10 | 0 | 31 | não passa |
-| svc-rs | nacional | em_andamento | 10 | 10 | 1 | não passa |
-| svrs | nacional | em_andamento | 84 | 84 | 8 | não passa |
+| svan | nacional | em_andamento | 12 | 12 | 0 | passa |
+| svc-an | nacional | em_andamento | 12 | 0 | 12 | não passa |
+| svc-rs | nacional | em_andamento | 10 | 10 | 0 | passa |
+| svrs | nacional | em_andamento | 84 | 84 | 4 | não passa |
+| svsp | nacional | em_andamento | 16 | 0 | 30 | não passa |
 
 ## Fontes oficiais
 
@@ -43,18 +44,16 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 
 | Serviço | Ambiente | Fonte oficial | Responde | Contrato | Diagnóstico da sonda |
 |---|---|---|---|---|---|
-| `an.nfe.distribuicao_dfe` | producao | coletada (nfe-portal-producao) | sim | não obtido | acesso_negado |
-| `an.nfe.distribuicao_dfe` | homologacao | coletada (nfe-portal-homologacao) | sim | não obtido | acesso_negado |
-| `an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao) | sim | não obtido | acesso_negado |
-| `an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao) | sim | não obtido | acesso_negado |
-| `an.cte.distribuicao_dfe` | producao | coletada (cte-portal-producao) | sim | não obtido | acesso_negado |
-| `an.cte.distribuicao_dfe` | homologacao | não | sim | não obtido | acesso_negado |
+| `an.nfe.distribuicao_dfe` | producao | coletada (nfe-portal-producao) | sim | restrito (exige certificado) | acesso_negado |
+| `an.nfe.distribuicao_dfe` | homologacao | coletada (nfe-portal-homologacao) | sim | restrito (exige certificado) | acesso_negado |
+| `an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao) | sim | restrito (exige certificado) | acesso_negado |
+| `an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao) | sim | restrito (exige certificado) | acesso_negado |
+| `an.cte.distribuicao_dfe` | producao | coletada (cte-portal-producao) | sim | restrito (exige certificado) | acesso_negado |
+| `an.cte.distribuicao_dfe` | homologacao | declarada | sim | restrito (exige certificado) | acesso_negado |
 
 Pendências do arquivo:
 
 - fonte oficial lista https://www.nfe.fazenda.gov.br/agendamentosvc, que não está no catálogo
-- relação de UFs atendidas em documentos_fiscais.nfe não confirmada em fonte oficial
-- relação de UFs atendidas em documentos_fiscais.cte não confirmada em fonte oficial
 
 ## Portal GNRE (`gnre`)
 
@@ -88,28 +87,22 @@ Pendências do arquivo:
 | `svan.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svan.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 
-Pendências do arquivo:
-
-- relação de UFs atendidas em documentos_fiscais.nfe não confirmada em fonte oficial
-
 ## SEFAZ Virtual de Contingência do Ambiente Nacional (SVC-AN) (`svc-an`)
 
 | Serviço | Ambiente | Fonte oficial | Responde | Contrato | Diagnóstico da sonda |
 |---|---|---|---|---|---|
-| `svc-an.nfe.autorizacao` | producao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.autorizacao` | homologacao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.ret_autorizacao` | producao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.ret_autorizacao` | homologacao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.consulta_protocolo` | producao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.consulta_protocolo` | homologacao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.status_servico` | producao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.status_servico` | homologacao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.recepcao_evento` | producao | não | não | não obtido | dns_falhou |
-| `svc-an.nfe.recepcao_evento` | homologacao | não | não | não obtido | dns_falhou |
-
-Pendências do arquivo:
-
-- relação de UFs atendidas em documentos_fiscais.nfe não confirmada em fonte oficial
+| `svc-an.nfe.autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.ret_autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.ret_autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.consulta_protocolo` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.consulta_protocolo` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.inutilizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.inutilizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.status_servico` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.status_servico` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
 
 ## SEFAZ Virtual de Contingência do Rio Grande do Sul (SVC-RS) (`svc-rs`)
 
@@ -125,10 +118,6 @@ Pendências do arquivo:
 | `svc-rs.nfe.status_servico` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svc-rs.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svc-rs.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
-
-Pendências do arquivo:
-
-- relação de UFs atendidas em documentos_fiscais.nfe não confirmada em fonte oficial
 
 ## SEFAZ Virtual do Rio Grande do Sul (SVRS) (`svrs`)
 
@@ -221,14 +210,48 @@ Pendências do arquivo:
 
 Pendências do arquivo:
 
-- relação de UFs atendidas em documentos_fiscais.nfe não confirmada em fonte oficial
 - relação de UFs atendidas em documentos_fiscais.nfce não confirmada em fonte oficial
-- relação de UFs atendidas em documentos_fiscais.cte não confirmada em fonte oficial
-- relação de UFs atendidas em documentos_fiscais.mdfe não confirmada em fonte oficial
 - relação de UFs atendidas em documentos_fiscais.bpe não confirmada em fonte oficial
 - relação de UFs atendidas em documentos_fiscais.nf3e não confirmada em fonte oficial
 - relação de UFs atendidas em documentos_fiscais.nfcom não confirmada em fonte oficial
-- relação de UFs atendidas em cadastro.consulta_cadastro não confirmada em fonte oficial
+
+## SEFAZ Virtual de São Paulo (SVSP) (`svsp`)
+
+| Serviço | Ambiente | Fonte oficial | Responde | Contrato | Diagnóstico da sonda |
+|---|---|---|---|---|---|
+| `svsp.cte.recepcao_sinc` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_sinc` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_simp` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_os` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_gtve` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_gtve` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.consulta` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.consulta` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.status_servico` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.status_servico` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_evento` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.qrcode` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
+| `svsp.cte.qrcode` | homologacao | coletada (svrs-cte) | — | — | — |
+
+Pendências do arquivo:
+
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeautorizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nferetautorizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://homologacao.nfe.fazenda.sp.gov.br/ws/nfestatusservico4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nfeautorizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nfeinutilizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nferecepcaoevento4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nferetautorizacao4.asmx, que não está no catálogo
+- fonte oficial lista https://nfe.fazenda.sp.gov.br/ws/nfestatusservico4.asmx, que não está no catálogo
 
 ## URLs oficiais fora do catálogo
 
@@ -415,14 +438,6 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://homologacao.nfce.sefa.pr.gov.br/nfce/nferecepcaoevento4 | svrs-nfce |
 | https://homologacao.nfce.sefa.pr.gov.br/nfce/nferetautorizacao4 | svrs-nfce |
 | https://homologacao.nfce.sefa.pr.gov.br/nfce/nfestatusservico4 | svrs-nfce |
-| https://homologacao.nfe.fazenda.sp.gov.br/cteconsulta/qrcode | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cteconsultav4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaoeventov4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaogtvev4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaoosv4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaosimpv4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaosincv4.asmx | svrs-cte |
-| https://homologacao.nfe.fazenda.sp.gov.br/ctews/ws/ctestatusservicov4.asmx | svrs-cte |
 | https://homologacao.nfe.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx | nfe-portal-homologacao, svrs-nfe |
 | https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeautorizacao4.asmx | nfe-portal-homologacao, svrs-nfe |
 | https://homologacao.nfe.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx | nfe-portal-homologacao, svrs-nfe |
@@ -549,14 +564,6 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://nfe.fazenda.mg.gov.br/nfe2/services/nferecepcaoevento4 | nfe-portal-producao, svrs-nfe |
 | https://nfe.fazenda.mg.gov.br/nfe2/services/nferetautorizacao4 | nfe-portal-producao, svrs-nfe |
 | https://nfe.fazenda.mg.gov.br/nfe2/services/nfestatusservico4 | nfe-portal-producao, svrs-nfe |
-| https://nfe.fazenda.sp.gov.br/cteconsulta/qrcode | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cteconsultav4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaoeventov4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaogtvev4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaoosv4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaosimpv4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/cterecepcaosincv4.asmx | cte-portal-producao, svrs-cte |
-| https://nfe.fazenda.sp.gov.br/ctews/ws/ctestatusservicov4.asmx | cte-portal-producao, svrs-cte |
 | https://nfe.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx | nfe-portal-producao, svrs-nfe |
 | https://nfe.fazenda.sp.gov.br/ws/nfeautorizacao4.asmx | nfe-portal-producao, svrs-nfe |
 | https://nfe.fazenda.sp.gov.br/ws/nfeconsultaprotocolo4.asmx | nfe-portal-producao, svrs-nfe |

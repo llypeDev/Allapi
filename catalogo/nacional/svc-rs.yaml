@@ -4,20 +4,23 @@ nome: SEFAZ Virtual de Contingência do Rio Grande do Sul (SVC-RS)
 mantenedor: SEFAZ-RS
 status: em_andamento
 notas: >-
-  Semente inicial: URLs candidatas registradas de memória.
-  Supõe-se que a contingência SVC-RS use os mesmos endereços da SVRS. Esses endereços constam na fonte oficial
-  como SVRS, o que não prova o uso em contingência: confirmar no Portal Nacional da NF-e.
+  Serviços e relação de UFs conferidos no Portal Nacional da NF-e (coleta de 2026-11-10).
+  A SVC-RS da NF-e atende nos mesmos endereços da SVRS e não oferece inutilização.
+  A contingência do CT-e pela SVC-RS está registrada no arquivo da SVRS.
 atende:
   - item: documentos_fiscais.nfe
     papel: contingencia
     ufs: [AM, BA, GO, MA, MS, MT, PE, PR]
-    confirmado: false
-    nota: Registrado de memória; conferir no Portal NF-e.
+    confirmado: true
+    evidencia:
+      url: "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+      consultado_em: 2026-11-10
+      nota: "Texto 'UF que utilizam a SVC-RS'. A página de homologação diverge: lá o PI também aparece na SVC-RS."
 servicos:
   - id: svc-rs.nfe.autorizacao
     item: documentos_fiscais.nfe
     nome: NFeAutorizacao
-    descricao: Envio de lote de NF-e para autorização
+    descricao: "Envio de lote de NF-e para autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -25,13 +28,16 @@ servicos:
       - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
       - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svc-rs.nfe.ret_autorizacao
     item: documentos_fiscais.nfe
     nome: NFeRetAutorizacao
-    descricao: Consulta do resultado do lote enviado
+    descricao: "Consulta do resultado do lote enviado"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -39,13 +45,16 @@ servicos:
       - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
       - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svc-rs.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
     nome: NfeConsultaProtocolo
-    descricao: Consulta da situação de uma NF-e pela chave
+    descricao: "Consulta da situação de uma NF-e pela chave"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -53,13 +62,16 @@ servicos:
       - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
       - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svc-rs.nfe.status_servico
     item: documentos_fiscais.nfe
     nome: NfeStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -67,13 +79,16 @@ servicos:
       - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
       - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
 
   - id: svc-rs.nfe.recepcao_evento
     item: documentos_fiscais.nfe
     nome: RecepcaoEvento
-    descricao: Registro de eventos (cancelamento, carta de correção etc.)
+    descricao: "Registro de eventos (cancelamento, carta de correção etc.)"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -81,5 +96,8 @@ servicos:
       - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
       - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+        - "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="

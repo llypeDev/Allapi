@@ -1,0 +1,161 @@
+escopo: nacional
+id: svsp
+nome: SEFAZ Virtual de São Paulo (SVSP)
+mantenedor: SEFAZ-SP
+status: em_andamento
+notas: >-
+  Ambiente da SEFAZ-SP que autoriza CT-e para outras UFs e serve de contingência (SVC-SP).
+  Conferido no portal DFe da SVRS e no Portal Nacional do CT-e (coleta de 2026-11-10).
+  Compartilha o host com os serviços próprios de São Paulo, que entram no arquivo do estado.
+atende:
+  - item: documentos_fiscais.cte
+    papel: autorizacao
+    ufs: [AP, PE, RR]
+    confirmado: true
+    evidencia:
+      url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+      consultado_em: 2026-11-10
+      nota: "Texto 'Estados que utilizam a SVSP - Sefaz Virtual de São Paulo: AP, PE, RR'."
+  - item: documentos_fiscais.cte
+    papel: contingencia
+    ufs: [AC, AL, AM, BA, CE, DF, ES, GO, MA, MG, PA, PB, PI, PR, RJ, RN, RO, RS, SC, SE, TO]
+    confirmado: true
+    evidencia:
+      url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+      consultado_em: 2026-11-10
+      nota: "Texto 'Estados que devem utilizar a SVC-SP: aqueles que autorizam na SVRS, MG, PR, RS'. A SVC-SP usa os mesmos endereços da SVSP."
+servicos:
+  - id: svsp.cte.recepcao_sinc
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoSincV4
+    descricao: "Autorização síncrona de CT-e"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.recepcao_simp
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoSimpV4
+    descricao: "Autorização de CT-e simplificado"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.recepcao_os
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoOSV4
+    descricao: "Autorização de CT-e OS (modelo 67)"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.recepcao_gtve
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoGTVeV4
+    descricao: "Autorização de GTV-e"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.consulta
+    item: documentos_fiscais.cte
+    nome: CTeConsultaV4
+    descricao: "Consulta da situação de um CT-e pela chave"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.status_servico
+    item: documentos_fiscais.cte
+    nome: CTeStatusServicoV4
+    descricao: "Situação do serviço de autorização"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.recepcao_evento
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoEventoV4
+    descricao: "Registro de eventos do CT-e"
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svsp.cte.qrcode
+    item: documentos_fiscais.cte
+    nome: Consulta por QR Code
+    descricao: "Consulta pública do CT-e a partir do QR Code impresso"
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeConsulta/qrCode" }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeConsulta/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+        - "https://www.cte.fazenda.gov.br/portal/webServices.aspx"

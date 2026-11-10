@@ -6,52 +6,72 @@ status: em_andamento
 notas: >-
   Serviços conferidos contra as páginas Relação de Serviços Web do portal DFe da SVRS (coleta de 2026-11-10).
   Os endpoints SOAP respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.
-  Falta confirmar em fonte oficial quais UFs usam a SVRS em cada documento.
+  Falta fonte oficial para a relação de UFs que usam a SVRS em NFC-e, BP-e, NF3e e NFCom.
 atende:
   - item: documentos_fiscais.nfe
     papel: autorizacao
     ufs: [AC, AL, AP, CE, DF, ES, PA, PB, PI, RJ, RN, RO, RR, SC, SE, TO]
-    confirmado: false
-    nota: Relação registrada de memória; conferir no Portal Nacional da NF-e.
+    confirmado: true
+    evidencia:
+      url: "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+      consultado_em: 2026-11-10
+      nota: "Texto 'UF que utilizam a SVRS - Para demais serviços relacionados com o sistema da NF-e'."
+  - item: cadastro.consulta_cadastro
+    ufs: [AC, ES, PB, RN, SC]
+    confirmado: true
+    evidencia:
+      url: "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+      consultado_em: 2026-11-10
+      nota: "Texto 'UF que utilizam a SVRS - Para serviço de Consulta Cadastro'."
+  - item: documentos_fiscais.cte
+    papel: autorizacao
+    ufs: [AC, AL, AM, BA, CE, DF, ES, GO, MA, PA, PB, PI, RJ, RN, RO, SC, SE, TO]
+    confirmado: true
+    evidencia:
+      url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+      consultado_em: 2026-11-10
+      nota: "Texto 'Estados que utilizam a SVRS - Sefaz Virtual do RS'."
+  - item: documentos_fiscais.cte
+    papel: contingencia
+    ufs: [AP, MS, MT, PE, RR, SP]
+    confirmado: true
+    evidencia:
+      url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+      consultado_em: 2026-11-10
+      nota: "Texto 'Estados que devem utilizar a SVC-RS: aqueles que autorizam na SVSP, MT, MS, SP'. A SVC-RS do CT-e usa os mesmos endereços da SVRS."
+  - item: documentos_fiscais.mdfe
+    papel: autorizacao
+    ufs: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
+    confirmado: true
+    evidencia:
+      url: "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
+      consultado_em: 2026-11-10
+      nota: "A relação lista um único autorizador, em produção e homologação: 'SVRS (Ambiente Nacional)'."
   - item: documentos_fiscais.nfce
     papel: autorizacao
     ufs: []
     confirmado: false
-    nota: Relação de UFs ainda não levantada.
-  - item: documentos_fiscais.cte
-    papel: autorizacao
-    ufs: []
-    confirmado: false
-    nota: Relação de UFs ainda não levantada.
-  - item: documentos_fiscais.mdfe
-    papel: autorizacao
-    ufs: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
-    confirmado: false
-    nota: A relação oficial lista a SVRS como único autorizador (Ambiente Nacional); falta a evidência explícita da abrangência.
+    nota: "A página oficial lista autorizadores próprios em AM, GO, MS, MT, PR, RS e SP, mas não diz quais UFs usam a SVRS."
   - item: documentos_fiscais.bpe
     papel: autorizacao
     ufs: []
     confirmado: false
-    nota: Relação de UFs ainda não levantada.
+    nota: "A página oficial lista autorizadores próprios em MG, MS, MT, PR e SP, mas não diz quais UFs usam a SVRS."
   - item: documentos_fiscais.nf3e
     papel: autorizacao
     ufs: []
     confirmado: false
-    nota: Relação de UFs ainda não levantada.
+    nota: "A página oficial lista autorizadores próprios em MG, MS, MT e PR, mas não diz quais UFs usam a SVRS."
   - item: documentos_fiscais.nfcom
     papel: autorizacao
     ufs: []
     confirmado: false
-    nota: Relação de UFs ainda não levantada.
-  - item: cadastro.consulta_cadastro
-    ufs: []
-    confirmado: false
-    nota: Relação de UFs ainda não levantada.
+    nota: "A página oficial lista autorizadores próprios em MG, MS e MT, mas não diz quais UFs usam a SVRS."
 servicos:
   - id: svrs.nfe.autorizacao
     item: documentos_fiscais.nfe
     nome: NFeAutorizacao
-    descricao: Envio de lote de NF-e para autorização
+    descricao: "Envio de lote de NF-e para autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -67,7 +87,7 @@ servicos:
   - id: svrs.nfe.ret_autorizacao
     item: documentos_fiscais.nfe
     nome: NFeRetAutorizacao
-    descricao: Consulta do resultado do lote enviado
+    descricao: "Consulta do resultado do lote enviado"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -83,7 +103,7 @@ servicos:
   - id: svrs.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
     nome: NfeConsultaProtocolo
-    descricao: Consulta da situação de uma NF-e pela chave
+    descricao: "Consulta da situação de uma NF-e pela chave"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -99,7 +119,7 @@ servicos:
   - id: svrs.nfe.inutilizacao
     item: documentos_fiscais.nfe
     nome: NfeInutilizacao
-    descricao: Inutilização de faixa de numeração
+    descricao: "Inutilização de faixa de numeração"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -115,7 +135,7 @@ servicos:
   - id: svrs.nfe.status_servico
     item: documentos_fiscais.nfe
     nome: NfeStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -131,7 +151,7 @@ servicos:
   - id: svrs.nfe.recepcao_evento
     item: documentos_fiscais.nfe
     nome: RecepcaoEvento
-    descricao: Registro de eventos (cancelamento, carta de correção etc.)
+    descricao: "Registro de eventos (cancelamento, carta de correção etc.)"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -147,7 +167,7 @@ servicos:
   - id: svrs.nfce.autorizacao
     item: documentos_fiscais.nfce
     nome: NFeAutorizacao
-    descricao: Envio de lote de NFC-e para autorização
+    descricao: "Envio de lote de NFC-e para autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -163,7 +183,7 @@ servicos:
   - id: svrs.nfce.ret_autorizacao
     item: documentos_fiscais.nfce
     nome: NFeRetAutorizacao
-    descricao: Consulta do resultado do lote enviado
+    descricao: "Consulta do resultado do lote enviado"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -179,7 +199,7 @@ servicos:
   - id: svrs.nfce.consulta_protocolo
     item: documentos_fiscais.nfce
     nome: NfeConsultaProtocolo
-    descricao: Consulta da situação de uma NFC-e pela chave
+    descricao: "Consulta da situação de uma NFC-e pela chave"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -195,7 +215,7 @@ servicos:
   - id: svrs.nfce.inutilizacao
     item: documentos_fiscais.nfce
     nome: NfeInutilizacao
-    descricao: Inutilização de faixa de numeração
+    descricao: "Inutilização de faixa de numeração"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -211,7 +231,7 @@ servicos:
   - id: svrs.nfce.status_servico
     item: documentos_fiscais.nfce
     nome: NfeStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -227,7 +247,7 @@ servicos:
   - id: svrs.nfce.recepcao_evento
     item: documentos_fiscais.nfce
     nome: RecepcaoEvento
-    descricao: Registro de eventos (cancelamento, carta de correção etc.)
+    descricao: "Registro de eventos (cancelamento, carta de correção etc.)"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -243,7 +263,7 @@ servicos:
   - id: svrs.consulta_cadastro.consulta_cadastro
     item: cadastro.consulta_cadastro
     nome: NfeConsultaCadastro
-    descricao: Consulta ao cadastro de contribuintes do ICMS por CNPJ, CPF ou IE
+    descricao: "Consulta ao cadastro de contribuintes do ICMS por CNPJ, CPF ou IE"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -254,12 +274,12 @@ servicos:
       registrado_em: 2026-11-10
       referencias:
         - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
-    notas: A relação oficial publica só o endereço de produção; não há endpoint de homologação listado.
+    notas: "A relação oficial publica só o endereço de produção; não há endpoint de homologação listado."
 
   - id: svrs.cte.recepcao_sinc
     item: documentos_fiscais.cte
     nome: CTeRecepcaoSincV4
-    descricao: Autorização síncrona de CT-e
+    descricao: "Autorização síncrona de CT-e"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -275,7 +295,7 @@ servicos:
   - id: svrs.cte.recepcao_simp
     item: documentos_fiscais.cte
     nome: CTeRecepcaoSimpV4
-    descricao: Autorização de CT-e simplificado
+    descricao: "Autorização de CT-e simplificado"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -291,7 +311,7 @@ servicos:
   - id: svrs.cte.recepcao_os
     item: documentos_fiscais.cte
     nome: CTeRecepcaoOSV4
-    descricao: Autorização de CT-e OS (modelo 67)
+    descricao: "Autorização de CT-e OS (modelo 67)"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -307,7 +327,7 @@ servicos:
   - id: svrs.cte.recepcao_gtve
     item: documentos_fiscais.cte
     nome: CTeRecepcaoGTVeV4
-    descricao: Autorização de GTV-e
+    descricao: "Autorização de GTV-e"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -323,7 +343,7 @@ servicos:
   - id: svrs.cte.consulta
     item: documentos_fiscais.cte
     nome: CTeConsultaV4
-    descricao: Consulta da situação de um CT-e pela chave
+    descricao: "Consulta da situação de um CT-e pela chave"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -339,7 +359,7 @@ servicos:
   - id: svrs.cte.status_servico
     item: documentos_fiscais.cte
     nome: CTeStatusServicoV4
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -355,7 +375,7 @@ servicos:
   - id: svrs.cte.recepcao_evento
     item: documentos_fiscais.cte
     nome: CTeRecepcaoEventoV4
-    descricao: Registro de eventos do CT-e
+    descricao: "Registro de eventos do CT-e"
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -371,7 +391,7 @@ servicos:
   - id: svrs.mdfe.recepcao_sinc
     item: documentos_fiscais.mdfe
     nome: MDFeRecepcaoSinc
-    descricao: Autorização síncrona de MDF-e
+    descricao: "Autorização síncrona de MDF-e"
     versao: "3.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -387,7 +407,7 @@ servicos:
   - id: svrs.mdfe.consulta
     item: documentos_fiscais.mdfe
     nome: MDFeConsulta
-    descricao: Consulta da situação de um MDF-e pela chave
+    descricao: "Consulta da situação de um MDF-e pela chave"
     versao: "3.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -403,7 +423,7 @@ servicos:
   - id: svrs.mdfe.status_servico
     item: documentos_fiscais.mdfe
     nome: MDFeStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "3.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -419,7 +439,7 @@ servicos:
   - id: svrs.mdfe.recepcao_evento
     item: documentos_fiscais.mdfe
     nome: MDFeRecepcaoEvento
-    descricao: Registro de eventos (encerramento, cancelamento etc.)
+    descricao: "Registro de eventos (encerramento, cancelamento etc.)"
     versao: "3.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -435,7 +455,7 @@ servicos:
   - id: svrs.mdfe.cons_nao_enc
     item: documentos_fiscais.mdfe
     nome: MDFeConsNaoEnc
-    descricao: Consulta de MDF-e não encerrados
+    descricao: "Consulta de MDF-e não encerrados"
     versao: "3.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -451,7 +471,7 @@ servicos:
   - id: svrs.mdfe.distribuicao_dfe
     item: documentos_fiscais.mdfe
     nome: MDFeDistribuicaoDFe
-    descricao: Distribuição de documentos para os atores do MDF-e
+    descricao: "Distribuição de documentos para os atores do MDF-e"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -467,7 +487,7 @@ servicos:
   - id: svrs.bpe.recepcao
     item: documentos_fiscais.bpe
     nome: BPeRecepcao
-    descricao: Autorização de BP-e
+    descricao: "Autorização de BP-e"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -483,7 +503,7 @@ servicos:
   - id: svrs.bpe.recepcao_tm
     item: documentos_fiscais.bpe
     nome: BPeRecepcaoTM
-    descricao: Autorização de BP-e de transporte metropolitano
+    descricao: "Autorização de BP-e de transporte metropolitano"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -499,7 +519,7 @@ servicos:
   - id: svrs.bpe.recepcao_ta
     item: documentos_fiscais.bpe
     nome: BPeRecepcaoTA
-    descricao: Autorização de BP-e de transporte aéreo
+    descricao: "Autorização de BP-e de transporte aéreo"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -515,7 +535,7 @@ servicos:
   - id: svrs.bpe.consulta
     item: documentos_fiscais.bpe
     nome: BPeConsulta
-    descricao: Consulta da situação de um BP-e pela chave
+    descricao: "Consulta da situação de um BP-e pela chave"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -531,7 +551,7 @@ servicos:
   - id: svrs.bpe.status_servico
     item: documentos_fiscais.bpe
     nome: BPeStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -547,7 +567,7 @@ servicos:
   - id: svrs.bpe.recepcao_evento
     item: documentos_fiscais.bpe
     nome: BPeRecepcaoEvento
-    descricao: Registro de eventos do BP-e
+    descricao: "Registro de eventos do BP-e"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -563,7 +583,7 @@ servicos:
   - id: svrs.nf3e.recepcao_sinc
     item: documentos_fiscais.nf3e
     nome: NF3eRecepcaoSinc
-    descricao: Autorização síncrona de NF3e
+    descricao: "Autorização síncrona de NF3e"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -579,7 +599,7 @@ servicos:
   - id: svrs.nf3e.consulta
     item: documentos_fiscais.nf3e
     nome: NF3eConsulta
-    descricao: Consulta da situação de uma NF3e pela chave
+    descricao: "Consulta da situação de uma NF3e pela chave"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -595,7 +615,7 @@ servicos:
   - id: svrs.nf3e.status_servico
     item: documentos_fiscais.nf3e
     nome: NF3eStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -611,7 +631,7 @@ servicos:
   - id: svrs.nf3e.recepcao_evento
     item: documentos_fiscais.nf3e
     nome: NF3eRecepcaoEvento
-    descricao: Registro de eventos da NF3e
+    descricao: "Registro de eventos da NF3e"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -627,7 +647,7 @@ servicos:
   - id: svrs.nfcom.recepcao
     item: documentos_fiscais.nfcom
     nome: NFComRecepcao
-    descricao: Autorização de NFCom
+    descricao: "Autorização de NFCom"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -643,7 +663,7 @@ servicos:
   - id: svrs.nfcom.consulta
     item: documentos_fiscais.nfcom
     nome: NFComConsulta
-    descricao: Consulta da situação de uma NFCom pela chave
+    descricao: "Consulta da situação de uma NFCom pela chave"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -659,7 +679,7 @@ servicos:
   - id: svrs.nfcom.status_servico
     item: documentos_fiscais.nfcom
     nome: NFComStatusServico
-    descricao: Situação do serviço de autorização
+    descricao: "Situação do serviço de autorização"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -675,7 +695,7 @@ servicos:
   - id: svrs.nfcom.recepcao_evento
     item: documentos_fiscais.nfcom
     nome: NFComRecepcaoEvento
-    descricao: Registro de eventos da NFCom
+    descricao: "Registro de eventos da NFCom"
     versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
@@ -691,7 +711,7 @@ servicos:
   - id: svrs.cte.qrcode
     item: documentos_fiscais.cte
     nome: Consulta por QR Code
-    descricao: Consulta pública do documento a partir do QR Code impresso
+    descricao: "Consulta pública do documento a partir do QR Code impresso"
     protocolo: portal
     autenticacao: nenhuma
     endpoints:
@@ -705,7 +725,7 @@ servicos:
   - id: svrs.mdfe.qrcode
     item: documentos_fiscais.mdfe
     nome: Consulta por QR Code
-    descricao: Consulta pública do documento a partir do QR Code impresso
+    descricao: "Consulta pública do documento a partir do QR Code impresso"
     protocolo: portal
     autenticacao: nenhuma
     endpoints:
@@ -719,7 +739,7 @@ servicos:
   - id: svrs.bpe.qrcode
     item: documentos_fiscais.bpe
     nome: Consulta por QR Code
-    descricao: Consulta pública do documento a partir do QR Code impresso
+    descricao: "Consulta pública do documento a partir do QR Code impresso"
     protocolo: portal
     autenticacao: nenhuma
     endpoints:
@@ -733,7 +753,7 @@ servicos:
   - id: svrs.nf3e.qrcode
     item: documentos_fiscais.nf3e
     nome: Consulta por QR Code
-    descricao: Consulta pública do documento a partir do QR Code impresso
+    descricao: "Consulta pública do documento a partir do QR Code impresso"
     protocolo: portal
     autenticacao: nenhuma
     endpoints:
@@ -747,7 +767,7 @@ servicos:
   - id: svrs.nfcom.qrcode
     item: documentos_fiscais.nfcom
     nome: Consulta por QR Code
-    descricao: Consulta pública do documento a partir do QR Code impresso
+    descricao: "Consulta pública do documento a partir do QR Code impresso"
     protocolo: portal
     autenticacao: nenhuma
     endpoints:
