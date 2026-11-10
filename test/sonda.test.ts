@@ -168,3 +168,37 @@ describe("sonda em TLS", () => {
     assert.equal(resultado.responde, true);
   });
 });
+
+describe("portais com cookie de sessão", () => {
+  it("devolve o cookie recebido e sai do laço de redirecionamento", async () => {
+    const servidor = http.createServer((req, res) => {
+      if ((req.headers.cookie ?? "").includes("sessao=abc")) {
+        res.writeHead(200, { "content-type": "text/xml" }).end(WSDL);
+      } else {
+        res.writeHead(302, { location: req.url ?? "/", "set-cookie": ["sessao=abc; path=/; HttpOnly"] }).end();
+      }
+    });
+    const porta = await escutar(servidor);
+    try {
+      const url = `http://127.0.0.1:${porta}/portal/webServices.aspx`;
+      const { resultado } = await sondarEndpoint(servico(), { ...ep(url), contrato: { tipo: "wsdl", url } });
+      assert.equal(resultado.diagnostico, "contrato_obtido");
+    } finally {
+      servidor.close();
+    }
+  });
+
+  it("guarda um resumo legível da página de erro 403", async () => {
+    const servidor = http.createServer((_req, res) => {
+      res.writeHead(403, { "content-type": "text/html" }).end("<html><style>b{}</style><h1>403 - Forbidden:</h1>\n<p>Access is denied.</p></html>");
+    });
+    const porta = await escutar(servidor);
+    try {
+      const { resultado } = await sondarEndpoint(servico(), ep(`http://127.0.0.1:${porta}/ws/a.asmx`));
+      assert.equal(resultado.diagnostico, "acesso_negado");
+      assert.equal(resultado.detalhe, "403 - Forbidden: Access is denied.");
+    } finally {
+      servidor.close();
+    }
+  });
+});

@@ -6,7 +6,8 @@ status: em_andamento
 notas: >-
   Semente inicial: URLs candidatas registradas de memória.
   A SVAN e a SVC-AN foram unificadas (homologação em 2024, produção em fevereiro de 2025) e os endereços mudaram;
-  os hosts abaixo podem estar desatualizados e precisam ser conferidos na relação oficial do Portal NF-e.
+  o host www.svc.fazenda.gov.br registrado aqui NÃO resolve no DNS (sonda de 2026-11-10): está errado.
+  Os endereços corretos dependem da coleta do Portal Nacional da NF-e.
 atende:
   - item: documentos_fiscais.nfe
     papel: contingencia

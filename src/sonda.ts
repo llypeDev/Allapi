@@ -118,7 +118,9 @@ export async function sondarEndpoint(
   const { status, corpo, tls } = r.resposta;
   const comum: ResultadoSonda = { ...base, responde: true, status_http: status, ...(tls ? { tls } : {}) };
 
-  if (status === 401 || status === 403) return { resultado: { ...comum, diagnostico: "acesso_negado" } };
+  if (status === 401 || status === 403) {
+    return { resultado: { ...comum, diagnostico: "acesso_negado", detalhe: resumirCorpo(corpo) } };
+  }
   if (status === 404 || status === 410) return { resultado: { ...comum, diagnostico: "nao_encontrado" } };
   if (status < 200 || status >= 300) return { resultado: { ...comum, diagnostico: "erro_http" } };
 
@@ -145,6 +147,17 @@ export async function sondarEndpoint(
     }
   }
   return { resultado: { ...comum, diagnostico: "http_200_sem_contrato" } };
+}
+
+/** Primeiras palavras visíveis de uma página de erro: ajuda a distinguir exigência de certificado de bloqueio de origem. */
+export function resumirCorpo(corpo: Buffer): string {
+  return corpo
+    .toString("latin1")
+    .replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .slice(0, 160);
 }
 
 /** Executa tarefas com limite de simultaneidade, preservando a ordem dos resultados. */

@@ -4,9 +4,10 @@ nome: SEFAZ Virtual do Ambiente Nacional (SVAN)
 mantenedor: Receita Federal do Brasil
 status: em_andamento
 notas: >-
-  Semente inicial: URLs candidatas registradas de memória.
-  A SVAN e a SVC-AN foram unificadas (homologação em 2024, produção em fevereiro de 2025) e os endereços mudaram;
-  os hosts abaixo podem estar desatualizados e precisam ser conferidos na relação oficial do Portal NF-e.
+  Serviços conferidos contra a Relação de Serviços Web do portal NF-e da SVRS (coleta de 2026-11-10),
+  que lista a SVAN nestes endereços em produção e homologação.
+  Os endpoints respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.
+  Falta confirmar em fonte oficial quais UFs usam a SVAN.
 atende:
   - item: documentos_fiscais.nfe
     papel: autorizacao
@@ -22,11 +23,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svan.nfe.ret_autorizacao
     item: documentos_fiscais.nfe
@@ -36,11 +39,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svan.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
@@ -50,11 +55,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svan.nfe.inutilizacao
     item: documentos_fiscais.nfe
@@ -64,11 +71,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svan.nfe.status_servico
     item: documentos_fiscais.nfe
@@ -78,11 +87,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svan.nfe.recepcao_evento
     item: documentos_fiscais.nfe
@@ -92,8 +103,10 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
-      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
+      - { ambiente: producao, url: "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"

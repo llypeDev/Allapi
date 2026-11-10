@@ -4,7 +4,7 @@ import { describe, it } from "node:test";
 import { fileURLToPath } from "node:url";
 import { carregarCatalogo, verificarSemantica } from "../src/catalogo.ts";
 import type { ArquivoCatalogo, Servico } from "../src/catalogo.ts";
-import { extrairUrlsServico, normalizarUrl } from "../src/coleta.ts";
+import { carregarDescartes, carregarFontes, extrairUrlsServico, normalizarUrl } from "../src/coleta.ts";
 import type { Estado } from "../src/estado.ts";
 import { analisar, gerarMarkdown } from "../src/relatorio.ts";
 import type { ResultadoSonda } from "../src/sonda.ts";
@@ -126,6 +126,14 @@ describe("regras semânticas", () => {
 });
 
 describe("coleta de fontes oficiais", () => {
+  it("carrega as fontes e os descartes do repositório, todos com motivo", () => {
+    assert.ok(carregarFontes(RAIZ).length > 0);
+    for (const d of carregarDescartes(RAIZ)) {
+      assert.ok(d.motivo.length > 10, d.contem);
+      assert.equal(d.contem, d.contem.toLowerCase());
+    }
+  });
+
   it("normaliza URLs para comparação", () => {
     assert.equal(normalizarUrl("HTTPS://NFe.SVRS.rs.gov.br:443/ws/NfeAutorizacao/NFeAutorizacao4.asmx?WSDL"), "https://nfe.svrs.rs.gov.br/ws/nfeautorizacao/nfeautorizacao4.asmx");
     assert.equal(normalizarUrl("https://h/services/Gnre/"), "https://h/services/gnre");

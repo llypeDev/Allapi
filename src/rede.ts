@@ -64,12 +64,14 @@ export async function resolverDns(host: string): Promise<{ ok: boolean; endereco
   }
 }
 
-function umaRequisicao(url: URL, opcoes: OpcoesBaixar): Promise<Resultado & { location?: string }> {
+type Parcial = Resultado & { location?: string; cookies?: string[] };
+
+function umaRequisicao(url: URL, opcoes: OpcoesBaixar, cookie: string): Promise<Parcial> {
   const timeoutMs = opcoes.timeoutMs ?? 20_000;
   const maxBytes = opcoes.maxBytes ?? 5 * 1024 * 1024;
   return new Promise((resolve) => {
     let terminado = false;
-    const fim = (r: Resultado & { location?: string }) => {
+    const fim = (r: Parcial) => {
       if (terminado) return;
       terminado = true;
       resolve(r);
@@ -78,7 +80,7 @@ function umaRequisicao(url: URL, opcoes: OpcoesBaixar): Promise<Resultado & { lo
       method: "GET",
       agent: false as const,
       timeout: timeoutMs,
-      headers: { "user-agent": AGENTE, accept: "*/*" },
+      headers: { "user-agent": AGENTE, accept: "*/*", ...(cookie ? { cookie } : {}) },
     };
     const aoResponder = (res: http.IncomingMessage) => {
       let tls: InfoTls | undefined;
@@ -105,6 +107,7 @@ function umaRequisicao(url: URL, opcoes: OpcoesBaixar): Promise<Resultado & { lo
         fim({
           ok: true,
           location: typeof res.headers.location === "string" ? res.headers.location : undefined,
+          cookies: res.headers["set-cookie"],
           resposta: {
             url_final: url.toString(),
             status: res.statusCode ?? 0,
@@ -165,9 +168,17 @@ export async function baixar(urlTexto: string, opcoes: OpcoesBaixar = {}): Promi
   } catch {
     return { ok: false, falha: { codigo: "URL_INVALIDA", mensagem: urlTexto, servidor_respondeu: false } };
   }
+  // Portais ASP.NET redirecionam para si mesmos até receberem de volta o cookie de sessão.
+  const cookies = new Map<string, string>();
   for (let i = 0; i <= max; i++) {
-    const r = await umaRequisicao(url, opcoes);
+    const cabecalho = [...cookies].map(([n, v]) => `${n}=${v}`).join("; ");
+    const r = await umaRequisicao(url, opcoes, cabecalho);
     if (!r.ok) return r;
+    for (const c of r.cookies ?? []) {
+      const par = c.split(";")[0] ?? "";
+      const igual = par.indexOf("=");
+      if (igual > 0) cookies.set(par.slice(0, igual).trim(), par.slice(igual + 1).trim());
+    }
     const { status } = r.resposta;
     if (status >= 300 && status < 400 && r.location) {
       url = new URL(r.location, url);

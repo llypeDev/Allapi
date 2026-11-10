@@ -56,7 +56,22 @@ fontes:
     descricao: Serviços NFCom da SVRS
     url: "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
 
-  - id: gnre-portal
+  - id: gnre-automacao
     orgao: Portal GNRE (SEFAZ-PE)
-    descricao: Portal da GNRE, área de automação
-    url: "https://www.gnre.pe.gov.br/gnre/portal/GNRE_Principal.jsp"
+    descricao: Portal da GNRE, área de automação (produção)
+    url: "https://www.gnre.pe.gov.br/gnre/portal/automacao.jsp"
+
+  - id: gnre-automacao-homologacao
+    orgao: Portal GNRE (SEFAZ-PE)
+    descricao: Portal da GNRE, área de automação (testes)
+    url: "https://www.testegnre.pe.gov.br/gnre/portal/automacao.jsp"
+
+# URLs que aparecem nas páginas oficiais e não são serviços. Cada descarte precisa de motivo.
+# A comparação é por trecho da URL normalizada (minúsculas, sem query).
+ignorar:
+  - contem: "//purl.org/"
+    motivo: Espaço de nome de metadados da página, não é endereço de serviço.
+  - contem: "//atendimentodfe.fazenda.rj.gov.br/"
+    motivo: Formulário de atendimento ao contribuinte, não é serviço.
+  - contem: "//www.serpro.gov.br/menu/suporte"
+    motivo: Central de suporte do SERPRO, não é serviço.

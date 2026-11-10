@@ -5,7 +5,8 @@ mantenedor: SEFAZ-RS
 status: em_andamento
 notas: >-
   Semente inicial: URLs candidatas registradas de memória.
-  A contingência SVC-RS usa os mesmos endereços da SVRS; confirmar na relação oficial.
+  Supõe-se que a contingência SVC-RS use os mesmos endereços da SVRS. Esses endereços constam na fonte oficial
+  como SVRS, o que não prova o uso em contingência: confirmar no Portal Nacional da NF-e.
 atende:
   - item: documentos_fiscais.nfe
     papel: contingencia
@@ -21,8 +22,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
     origem:
       tipo: memoria
       registrado_em: 2026-11-10
@@ -35,50 +36,50 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
     origem:
       tipo: memoria
       registrado_em: 2026-11-10
 
   - id: svc-rs.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
-    nome: NFeConsultaProtocolo
+    nome: NfeConsultaProtocolo
     descricao: Consulta da situação de uma NF-e pela chave
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
     origem:
       tipo: memoria
       registrado_em: 2026-11-10
 
   - id: svc-rs.nfe.status_servico
     item: documentos_fiscais.nfe
-    nome: NFeStatusServico
+    nome: NfeStatusServico
     descricao: Situação do serviço de autorização
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
     origem:
       tipo: memoria
       registrado_em: 2026-11-10
 
   - id: svc-rs.nfe.recepcao_evento
     item: documentos_fiscais.nfe
-    nome: NFeRecepcaoEvento
+    nome: RecepcaoEvento
     descricao: Registro de eventos (cancelamento, carta de correção etc.)
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
     origem:
       tipo: memoria
       registrado_em: 2026-11-10

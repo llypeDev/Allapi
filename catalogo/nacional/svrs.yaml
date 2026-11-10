@@ -4,15 +4,15 @@ nome: SEFAZ Virtual do Rio Grande do Sul (SVRS)
 mantenedor: SEFAZ-RS
 status: em_andamento
 notas: >-
-  Semente inicial: todas as URLs abaixo são candidatas, registradas de memória ou de fonte secundária.
-  Só contam como confirmadas quando aparecerem numa fonte oficial coletada (ver relatorios/cobertura.md).
-  BP-e, NF3e e NFCom também são autorizados aqui; entram quando a página oficial for coletada.
+  Serviços conferidos contra as páginas Relação de Serviços Web do portal DFe da SVRS (coleta de 2026-11-10).
+  Os endpoints SOAP respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.
+  Falta confirmar em fonte oficial quais UFs usam a SVRS em cada documento.
 atende:
   - item: documentos_fiscais.nfe
     papel: autorizacao
     ufs: [AC, AL, AP, CE, DF, ES, PA, PB, PI, RJ, RN, RO, RR, SC, SE, TO]
     confirmado: false
-    nota: Relação registrada de memória; conferir no Portal NF-e.
+    nota: Relação registrada de memória; conferir no Portal Nacional da NF-e.
   - item: documentos_fiscais.nfce
     papel: autorizacao
     ufs: []
@@ -27,7 +27,22 @@ atende:
     papel: autorizacao
     ufs: [AC, AL, AM, AP, BA, CE, DF, ES, GO, MA, MG, MS, MT, PA, PB, PE, PI, PR, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
     confirmado: false
-    nota: O MDF-e tem autorizador único nacional; conferir no portal do MDF-e.
+    nota: A relação oficial lista a SVRS como único autorizador (Ambiente Nacional); falta a evidência explícita da abrangência.
+  - item: documentos_fiscais.bpe
+    papel: autorizacao
+    ufs: []
+    confirmado: false
+    nota: Relação de UFs ainda não levantada.
+  - item: documentos_fiscais.nf3e
+    papel: autorizacao
+    ufs: []
+    confirmado: false
+    nota: Relação de UFs ainda não levantada.
+  - item: documentos_fiscais.nfcom
+    papel: autorizacao
+    ufs: []
+    confirmado: false
+    nota: Relação de UFs ainda não levantada.
   - item: cadastro.consulta_cadastro
     ufs: []
     confirmado: false
@@ -41,11 +56,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfe.ret_autorizacao
     item: documentos_fiscais.nfe
@@ -55,67 +72,77 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfe.consulta_protocolo
     item: documentos_fiscais.nfe
-    nome: NFeConsultaProtocolo
+    nome: NfeConsultaProtocolo
     descricao: Consulta da situação de uma NF-e pela chave
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfe.inutilizacao
     item: documentos_fiscais.nfe
-    nome: NFeInutilizacao
+    nome: NfeInutilizacao
     descricao: Inutilização de faixa de numeração
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfe.status_servico
     item: documentos_fiscais.nfe
-    nome: NFeStatusServico
+    nome: NfeStatusServico
     descricao: Situação do serviço de autorização
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfe.recepcao_evento
     item: documentos_fiscais.nfe
-    nome: NFeRecepcaoEvento
+    nome: RecepcaoEvento
     descricao: Registro de eventos (cancelamento, carta de correção etc.)
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
-      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
 
   - id: svrs.nfce.autorizacao
     item: documentos_fiscais.nfce
@@ -125,11 +152,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
   - id: svrs.nfce.ret_autorizacao
     item: documentos_fiscais.nfce
@@ -139,81 +168,93 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
   - id: svrs.nfce.consulta_protocolo
     item: documentos_fiscais.nfce
-    nome: NFeConsultaProtocolo
+    nome: NfeConsultaProtocolo
     descricao: Consulta da situação de uma NFC-e pela chave
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
   - id: svrs.nfce.inutilizacao
     item: documentos_fiscais.nfce
-    nome: NFeInutilizacao
+    nome: NfeInutilizacao
     descricao: Inutilização de faixa de numeração
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
   - id: svrs.nfce.status_servico
     item: documentos_fiscais.nfce
-    nome: NFeStatusServico
+    nome: NfeStatusServico
     descricao: Situação do serviço de autorização
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
   - id: svrs.nfce.recepcao_evento
     item: documentos_fiscais.nfce
-    nome: NFeRecepcaoEvento
+    nome: RecepcaoEvento
     descricao: Registro de eventos (cancelamento, carta de correção etc.)
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
-      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
+      - { ambiente: producao, url: "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
 
-  - id: svrs.consulta_cadastro.cad_consulta_cadastro
+  - id: svrs.consulta_cadastro.consulta_cadastro
     item: cadastro.consulta_cadastro
-    nome: CadConsultaCadastro
+    nome: NfeConsultaCadastro
     descricao: Consulta ao cadastro de contribuintes do ICMS por CNPJ, CPF ou IE
     versao: "4.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx" }
-      - { ambiente: homologacao, url: "https://cad-homologacao.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx" }
+      - { ambiente: producao, url: "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx", contrato_restrito: true }
     origem:
-      tipo: memoria
+      tipo: oficial
       registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+    notas: A relação oficial publica só o endereço de produção; não há endpoint de homologação listado.
 
   - id: svrs.cte.recepcao_sinc
     item: documentos_fiscais.cte
@@ -223,13 +264,29 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+
+  - id: svrs.cte.recepcao_simp
+    item: documentos_fiscais.cte
+    nome: CTeRecepcaoSimpV4
+    descricao: Autorização de CT-e simplificado
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.cte.recepcao_os
     item: documentos_fiscais.cte
@@ -239,13 +296,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.cte.recepcao_gtve
     item: documentos_fiscais.cte
@@ -255,13 +312,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.cte.consulta
     item: documentos_fiscais.cte
@@ -271,13 +328,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.cte.status_servico
     item: documentos_fiscais.cte
@@ -287,13 +344,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.cte.recepcao_evento
     item: documentos_fiscais.cte
@@ -303,13 +360,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx" }
-      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx" }
+      - { ambiente: producao, url: "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.projetoacbr.com.br/forum/topic/76600-erro-404-cte/"
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
 
   - id: svrs.mdfe.recepcao_sinc
     item: documentos_fiscais.mdfe
@@ -319,13 +376,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
 
   - id: svrs.mdfe.consulta
     item: documentos_fiscais.mdfe
@@ -335,13 +392,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
 
   - id: svrs.mdfe.status_servico
     item: documentos_fiscais.mdfe
@@ -351,13 +408,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
 
   - id: svrs.mdfe.recepcao_evento
     item: documentos_fiscais.mdfe
@@ -367,13 +424,13 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
 
   - id: svrs.mdfe.cons_nao_enc
     item: documentos_fiscais.mdfe
@@ -383,26 +440,320 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
 
   - id: svrs.mdfe.distribuicao_dfe
     item: documentos_fiscais.mdfe
     nome: MDFeDistribuicaoDFe
     descricao: Distribuição de documentos para os atores do MDF-e
-    versao: "3.00"
+    versao: "1.00"
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx" }
-      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx" }
+      - { ambiente: producao, url: "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx", contrato_restrito: true }
     origem:
-      tipo: secundaria
+      tipo: oficial
       registrado_em: 2026-11-10
       referencias:
-        - "https://www.sefaz.pe.gov.br/Servicos/Manifesto-Eletronico-de-Documentos-Fiscais/Paginas/WebServices-Homologacao-e-Producao-.aspx"
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
+
+  - id: svrs.bpe.recepcao
+    item: documentos_fiscais.bpe
+    nome: BPeRecepcao
+    descricao: Autorização de BP-e
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.bpe.recepcao_tm
+    item: documentos_fiscais.bpe
+    nome: BPeRecepcaoTM
+    descricao: Autorização de BP-e de transporte metropolitano
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.bpe.recepcao_ta
+    item: documentos_fiscais.bpe
+    nome: BPeRecepcaoTA
+    descricao: Autorização de BP-e de transporte aéreo
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.bpe.consulta
+    item: documentos_fiscais.bpe
+    nome: BPeConsulta
+    descricao: Consulta da situação de um BP-e pela chave
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.bpe.status_servico
+    item: documentos_fiscais.bpe
+    nome: BPeStatusServico
+    descricao: Situação do serviço de autorização
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.bpe.recepcao_evento
+    item: documentos_fiscais.bpe
+    nome: BPeRecepcaoEvento
+    descricao: Registro de eventos do BP-e
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.nf3e.recepcao_sinc
+    item: documentos_fiscais.nf3e
+    nome: NF3eRecepcaoSinc
+    descricao: Autorização síncrona de NF3e
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs.nf3e.consulta
+    item: documentos_fiscais.nf3e
+    nome: NF3eConsulta
+    descricao: Consulta da situação de uma NF3e pela chave
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nf3e.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs.nf3e.status_servico
+    item: documentos_fiscais.nf3e
+    nome: NF3eStatusServico
+    descricao: Situação do serviço de autorização
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nf3e.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs.nf3e.recepcao_evento
+    item: documentos_fiscais.nf3e
+    nome: NF3eRecepcaoEvento
+    descricao: Registro de eventos da NF3e
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs.nfcom.recepcao
+    item: documentos_fiscais.nfcom
+    nome: NFComRecepcao
+    descricao: Autorização de NFCom
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
+
+  - id: svrs.nfcom.consulta
+    item: documentos_fiscais.nfcom
+    nome: NFComConsulta
+    descricao: Consulta da situação de uma NFCom pela chave
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfcom.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
+
+  - id: svrs.nfcom.status_servico
+    item: documentos_fiscais.nfcom
+    nome: NFComStatusServico
+    descricao: Situação do serviço de autorização
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfcom.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
+
+  - id: svrs.nfcom.recepcao_evento
+    item: documentos_fiscais.nfcom
+    nome: NFComRecepcaoEvento
+    descricao: Registro de eventos da NFCom
+    versao: "1.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx", contrato_restrito: true }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
+
+  - id: svrs.cte.qrcode
+    item: documentos_fiscais.cte
+    nome: Consulta por QR Code
+    descricao: Consulta pública do documento a partir do QR Code impresso
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://dfe-portal.svrs.rs.gov.br/cte/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+
+  - id: svrs.mdfe.qrcode
+    item: documentos_fiscais.mdfe
+    nome: Consulta por QR Code
+    descricao: Consulta pública do documento a partir do QR Code impresso
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
+
+  - id: svrs.bpe.qrcode
+    item: documentos_fiscais.bpe
+    nome: Consulta por QR Code
+    descricao: Consulta pública do documento a partir do QR Code impresso
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://dfe-portal.svrs.rs.gov.br/bpe/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs.nf3e.qrcode
+    item: documentos_fiscais.nf3e
+    nome: Consulta por QR Code
+    descricao: Consulta pública do documento a partir do QR Code impresso
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs.nfcom.qrcode
+    item: documentos_fiscais.nfcom
+    nome: Consulta por QR Code
+    descricao: Consulta pública do documento a partir do QR Code impresso
+    protocolo: portal
+    autenticacao: nenhuma
+    endpoints:
+      - { ambiente: producao, url: "https://dfe-portal.svrs.rs.gov.br/nfcom/qrCode" }
+    origem:
+      tipo: oficial
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"

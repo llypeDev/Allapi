@@ -27,6 +27,20 @@ export interface EstadoFonte {
   urls_sha256?: string;
 }
 
+/** URL publicada numa fonte oficial que não é serviço; sempre com o motivo do descarte. */
+export interface Descarte {
+  contem: string;
+  motivo: string;
+}
+
+export function carregarDescartes(raiz: string): Descarte[] {
+  const doc = parse(readFileSync(join(raiz, "fontes", "fontes.yaml"), "utf8")) as { ignorar?: Descarte[] };
+  for (const d of doc.ignorar ?? []) {
+    if (!d.contem || !d.motivo) throw new Error("fontes.yaml: cada item de ignorar exige contem e motivo");
+  }
+  return (doc.ignorar ?? []).map((d) => ({ ...d, contem: d.contem.toLowerCase() }));
+}
+
 export function carregarFontes(raiz: string): Fonte[] {
   const doc = parse(readFileSync(join(raiz, "fontes", "fontes.yaml"), "utf8")) as { fontes: Fonte[] };
   const ids = new Set<string>();
@@ -87,7 +101,7 @@ export function extrairUrlsServico(html: string): string[] {
 
 export async function coletarFonte(
   fonte: Fonte,
-  opcoes: OpcoesBaixar & { agora?: () => Date } = {},
+  opcoes: OpcoesBaixar & { agora?: () => Date; descartes?: Descarte[] } = {},
 ): Promise<{ estado: EstadoFonte; corpo?: Buffer }> {
   const coletado_em = (opcoes.agora?.() ?? new Date()).toISOString();
   const r = await baixar(fonte.url, { timeoutMs: 30_000, ...opcoes });
@@ -99,7 +113,8 @@ export async function coletarFonte(
     return { estado: { url: fonte.url, coletado_em, ok: false, status_http: status, erro: `HTTP ${status}`, urls_servico: [] } };
   }
   // latin1 preserva todos os bytes: as URLs são ASCII, então a codificação da página não importa aqui.
-  const urls = extrairUrlsServico(corpo.toString("latin1"));
+  const descartes = opcoes.descartes ?? [];
+  const urls = extrairUrlsServico(corpo.toString("latin1")).filter((u) => !descartes.some((d) => u.includes(d.contem)));
   return {
     corpo,
     estado: {

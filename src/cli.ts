@@ -3,7 +3,7 @@ import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { carregarCatalogo } from "./catalogo.ts";
 import type { Catalogo } from "./catalogo.ts";
-import { carregarFontes, coletarFonte } from "./coleta.ts";
+import { carregarDescartes, carregarFontes, coletarFonte } from "./coleta.ts";
 import { carregarEstado, chaveSonda, gravar, gravarFontes, gravarSondas } from "./estado.ts";
 import { analisar, gerarMarkdown } from "./relatorio.ts";
 import { emParalelo, sondarEndpoint } from "./sonda.ts";
@@ -42,7 +42,8 @@ async function coletar(args: string[]): Promise<void> {
   const novo: typeof estado.fontes = {};
   let falhas = 0;
 
-  const resultados = await emParalelo(fontes, 4, (f) => coletarFonte(f));
+  const descartes = carregarDescartes(RAIZ);
+  const resultados = await emParalelo(fontes, 4, (f) => coletarFonte(f, { descartes }));
   fontes.forEach((fonte, i) => {
     const { estado: atual, corpo } = resultados[i]!;
     const anterior = estado.fontes[fonte.id];
