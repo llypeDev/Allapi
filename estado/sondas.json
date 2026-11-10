@@ -1,0 +1,1748 @@
+{
+  "an.cte.distribuicao_dfe@homologacao": {
+    "url": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+    "url_contrato": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.84"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom1.cte.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2026-12-19T18:39:44.000Z"
+    }
+  },
+  "an.cte.distribuicao_dfe@producao": {
+    "url": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
+    "url_contrato": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.95"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www1.cte.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2026-12-19T18:41:22.000Z"
+    }
+  },
+  "an.nfe.distribuicao_dfe@homologacao": {
+    "url": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
+    "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.070Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.82"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom1.nfe.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2026-12-19T18:38:46.000Z"
+    }
+  },
+  "an.nfe.distribuicao_dfe@producao": {
+    "url": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
+    "url_contrato": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.066Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.181"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www1.nfe.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:32:37.000Z"
+    }
+  },
+  "an.nfe.recepcao_evento@homologacao": {
+    "url": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.82"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom1.nfe.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2026-12-19T18:38:46.000Z"
+    }
+  },
+  "an.nfe.recepcao_evento@producao": {
+    "url": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.19"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.nfe.fazenda.gov.br",
+      "emissor": "YR2",
+      "valido_ate": "2027-01-17T11:02:16.000Z"
+    }
+  },
+  "gnre.gnre.config_uf@homologacao": {
+    "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF",
+    "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
+    "verificado_em": "2026-11-10T04:36:03.372Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.83.74"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.testegnre.pe.gov.br",
+      "emissor": "YR2",
+      "valido_ate": "2027-01-27T14:54:45.000Z"
+    }
+  },
+  "gnre.gnre.config_uf@producao": {
+    "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF",
+    "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
+    "verificado_em": "2026-11-10T04:36:02.078Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.99.68"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.gnre.pe.gov.br",
+      "emissor": "Sectigo Public Server Authentication CA OV R36",
+      "valido_ate": "2026-12-18T23:59:59.000Z"
+    }
+  },
+  "gnre.gnre.lote_recepcao@homologacao": {
+    "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
+    "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
+    "verificado_em": "2026-11-10T04:36:01.756Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.83.74"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.testegnre.pe.gov.br",
+      "emissor": "YR2",
+      "valido_ate": "2027-01-27T14:54:45.000Z"
+    }
+  },
+  "gnre.gnre.lote_recepcao@producao": {
+    "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
+    "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
+    "verificado_em": "2026-11-10T04:36:01.743Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.99.68"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.gnre.pe.gov.br",
+      "emissor": "Sectigo Public Server Authentication CA OV R36",
+      "valido_ate": "2026-12-18T23:59:59.000Z"
+    }
+  },
+  "gnre.gnre.resultado_lote@homologacao": {
+    "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
+    "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
+    "verificado_em": "2026-11-10T04:36:02.069Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.83.74"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.testegnre.pe.gov.br",
+      "emissor": "YR2",
+      "valido_ate": "2027-01-27T14:54:45.000Z"
+    }
+  },
+  "gnre.gnre.resultado_lote@producao": {
+    "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
+    "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
+    "verificado_em": "2026-11-10T04:36:01.918Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.238.99.68"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "www.gnre.pe.gov.br",
+      "emissor": "Sectigo Public Server Authentication CA OV R36",
+      "valido_ate": "2026-12-18T23:59:59.000Z"
+    }
+  },
+  "svan.nfe.autorizacao@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:03.774Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.autorizacao@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:03.390Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svan.nfe.consulta_protocolo@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:05.767Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.consulta_protocolo@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:05.144Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svan.nfe.inutilizacao@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:05.904Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.inutilizacao@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:05.902Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svan.nfe.recepcao_evento@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:07.122Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.recepcao_evento@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:07.105Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svan.nfe.ret_autorizacao@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:04.283Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.ret_autorizacao@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:04.279Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svan.nfe.status_servico@homologacao": {
+    "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
+    "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:07.104Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "189.9.67.77"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "hom.sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:58:25.000Z"
+    }
+  },
+  "svan.nfe.status_servico@producao": {
+    "url": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
+    "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:06.676Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.198.239.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "sefazvirtual.fazenda.gov.br",
+      "emissor": "AC SERPRO AR46 OV TLS CA 2025",
+      "valido_ate": "2027-04-26T12:57:57.000Z"
+    }
+  },
+  "svc-an.nfe.autorizacao@homologacao": {
+    "url": "https://hom.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
+    "url_contrato": "https://hom.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.055Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.autorizacao@producao": {
+    "url": "https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
+    "url_contrato": "https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:07.782Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.consulta_protocolo@homologacao": {
+    "url": "https://hom.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
+    "url_contrato": "https://hom.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.414Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.consulta_protocolo@producao": {
+    "url": "https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
+    "url_contrato": "https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.241Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.recepcao_evento@homologacao": {
+    "url": "https://hom.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://hom.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.731Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.recepcao_evento@producao": {
+    "url": "https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
+    "url_contrato": "https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.601Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.ret_autorizacao@homologacao": {
+    "url": "https://hom.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://hom.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.229Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.ret_autorizacao@producao": {
+    "url": "https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.068Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.status_servico@homologacao": {
+    "url": "https://hom.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
+    "url_contrato": "https://hom.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.575Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-an.nfe.status_servico@producao": {
+    "url": "https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
+    "url_contrato": "https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.417Z",
+    "origem": "github-actions",
+    "responde": false,
+    "diagnostico": "dns_falhou",
+    "detalhe": "ENOTFOUND"
+  },
+  "svc-rs.nfe.autorizacao@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.795Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.autorizacao@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.763Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.consulta_protocolo@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:09.782Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.consulta_protocolo@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.951Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.recepcao_evento@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:09.955Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.recepcao_evento@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:09.945Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.ret_autorizacao@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.887Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.ret_autorizacao@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:08.802Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.status_servico@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:09.876Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svc-rs.nfe.status_servico@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:09.844Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.consulta_cadastro.cad_consulta_cadastro@homologacao": {
+    "url": "https://cad-homologacao.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
+    "url_contrato": "https://cad-homologacao.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.810Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.155"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.consulta_cadastro.cad_consulta_cadastro@producao": {
+    "url": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
+    "url_contrato": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.808Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.consulta@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.044Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.consulta@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.623Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_evento@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.244Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_evento@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.115Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_gtve@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.608Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_gtve@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.473Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_os@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.432Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_os@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.426Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_sinc@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:14.403Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.recepcao_sinc@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.977Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.status_servico@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.062Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.cte.status_servico@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.060Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.cons_nao_enc@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.358Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.cons_nao_enc@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.350Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.consulta@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.733Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.consulta@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.727Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.distribuicao_dfe@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.596Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.distribuicao_dfe@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.405Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.recepcao_evento@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.346Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.recepcao_evento@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:16.079Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.recepcao_sinc@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.664Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.recepcao_sinc@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.286Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.status_servico@homologacao": {
+    "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
+    "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.923Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.144"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.mdfe.status_servico@producao": {
+    "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
+    "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:15.739Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.autorizacao@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.133Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.autorizacao@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.054Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.consulta_protocolo@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.684Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.consulta_protocolo@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.562Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.inutilizacao@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.112Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.inutilizacao@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.827Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.recepcao_evento@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.434Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.recepcao_evento@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.360Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.ret_autorizacao@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.503Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.ret_autorizacao@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:12.494Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.status_servico@homologacao": {
+    "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.337Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.150"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfce.status_servico@producao": {
+    "url": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:13.188Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.autorizacao@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:10.560Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.autorizacao@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:10.449Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.consulta_protocolo@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.045Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.consulta_protocolo@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:10.827Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.inutilizacao@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.382Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.inutilizacao@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.220Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.recepcao_evento@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.837Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.recepcao_evento@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.705Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.ret_autorizacao@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:10.783Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.ret_autorizacao@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:10.752Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.status_servico@homologacao": {
+    "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.455Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.140"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  },
+  "svrs.nfe.status_servico@producao": {
+    "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
+    "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:36:11.441Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    }
+  }
+}
