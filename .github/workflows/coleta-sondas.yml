@@ -1,0 +1,53 @@
+name: Coleta e sondas
+
+# Baixa as fontes oficiais, sonda todos os endpoints do catálogo e grava o resultado
+# (estado/, contratos/, fontes/snapshots/, relatorios/) de volta no mesmo branch.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 9 * * 1" # segundas, 06h17 de Brasília
+  push:
+    paths:
+      - "catalogo/**"
+      - "fontes/fontes.yaml"
+      - "src/**"
+      - ".github/workflows/coleta-sondas.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: coleta-sondas-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  executar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Coletar fontes oficiais
+        run: npm run coletar
+      - name: Sondar endpoints
+        run: npm run sondar
+      - name: Gerar relatório
+        run: |
+          npm run relatorio
+          cat relatorios/cobertura.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Gravar resultado no branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add estado contratos relatorios fontes/snapshots
+          if git diff --cached --quiet; then
+            echo "Nada mudou."
+            exit 0
+          fi
+          git commit -m "Atualiza coleta de fontes oficiais e sondas"
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "HEAD:$GITHUB_REF_NAME"

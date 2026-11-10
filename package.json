@@ -1,0 +1,28 @@
+{
+  "name": "catalogo-servicos-fiscais",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Catálogo verificado de APIs, web services e SOAP públicos dos estados brasileiros, com foco em contadores.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "scripts": {
+    "validar": "node src/cli.ts validar",
+    "coletar": "node src/cli.ts coletar",
+    "sondar": "node src/cli.ts sondar",
+    "relatorio": "node src/cli.ts relatorio",
+    "gate": "node src/cli.ts gate",
+    "test": "node --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "yaml": "^2.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}

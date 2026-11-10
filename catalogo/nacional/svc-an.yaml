@@ -1,0 +1,85 @@
+escopo: nacional
+id: svc-an
+nome: SEFAZ Virtual de Contingência do Ambiente Nacional (SVC-AN)
+mantenedor: Receita Federal do Brasil
+status: em_andamento
+notas: >-
+  Semente inicial: URLs candidatas registradas de memória.
+  A SVAN e a SVC-AN foram unificadas (homologação em 2024, produção em fevereiro de 2025) e os endereços mudaram;
+  os hosts abaixo podem estar desatualizados e precisam ser conferidos na relação oficial do Portal NF-e.
+atende:
+  - item: documentos_fiscais.nfe
+    papel: contingencia
+    ufs: [AC, AL, AP, CE, DF, ES, MG, PA, PB, PI, RJ, RN, RO, RR, RS, SC, SE, SP, TO]
+    confirmado: false
+    nota: Registrado de memória; conferir no Portal NF-e.
+servicos:
+  - id: svc-an.nfe.autorizacao
+    item: documentos_fiscais.nfe
+    nome: NFeAutorizacao
+    descricao: Envio de lote de NF-e para autorização
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx" }
+      - { ambiente: homologacao, url: "https://hom.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-an.nfe.ret_autorizacao
+    item: documentos_fiscais.nfe
+    nome: NFeRetAutorizacao
+    descricao: Consulta do resultado do lote enviado
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx" }
+      - { ambiente: homologacao, url: "https://hom.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-an.nfe.consulta_protocolo
+    item: documentos_fiscais.nfe
+    nome: NFeConsultaProtocolo
+    descricao: Consulta da situação de uma NF-e pela chave
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx" }
+      - { ambiente: homologacao, url: "https://hom.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-an.nfe.status_servico
+    item: documentos_fiscais.nfe
+    nome: NFeStatusServico
+    descricao: Situação do serviço de autorização
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx" }
+      - { ambiente: homologacao, url: "https://hom.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-an.nfe.recepcao_evento
+    item: documentos_fiscais.nfe
+    nome: NFeRecepcaoEvento
+    descricao: Registro de eventos
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
+      - { ambiente: homologacao, url: "https://hom.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10

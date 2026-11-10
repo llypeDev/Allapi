@@ -1,0 +1,84 @@
+escopo: nacional
+id: svc-rs
+nome: SEFAZ Virtual de Contingência do Rio Grande do Sul (SVC-RS)
+mantenedor: SEFAZ-RS
+status: em_andamento
+notas: >-
+  Semente inicial: URLs candidatas registradas de memória.
+  A contingência SVC-RS usa os mesmos endereços da SVRS; confirmar na relação oficial.
+atende:
+  - item: documentos_fiscais.nfe
+    papel: contingencia
+    ufs: [AM, BA, GO, MA, MS, MT, PE, PR]
+    confirmado: false
+    nota: Registrado de memória; conferir no Portal NF-e.
+servicos:
+  - id: svc-rs.nfe.autorizacao
+    item: documentos_fiscais.nfe
+    nome: NFeAutorizacao
+    descricao: Envio de lote de NF-e para autorização
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-rs.nfe.ret_autorizacao
+    item: documentos_fiscais.nfe
+    nome: NFeRetAutorizacao
+    descricao: Consulta do resultado do lote enviado
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-rs.nfe.consulta_protocolo
+    item: documentos_fiscais.nfe
+    nome: NFeConsultaProtocolo
+    descricao: Consulta da situação de uma NF-e pela chave
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-rs.nfe.status_servico
+    item: documentos_fiscais.nfe
+    nome: NFeStatusServico
+    descricao: Situação do serviço de autorização
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10
+
+  - id: svc-rs.nfe.recepcao_evento
+    item: documentos_fiscais.nfe
+    nome: NFeRecepcaoEvento
+    descricao: Registro de eventos (cancelamento, carta de correção etc.)
+    versao: "4.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
+      - { ambiente: homologacao, url: "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx" }
+    origem:
+      tipo: memoria
+      registrado_em: 2026-11-10

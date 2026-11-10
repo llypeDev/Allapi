@@ -1,0 +1,62 @@
+# Fontes oficiais coletadas automaticamente (npm run coletar).
+# Uma URL do catálogo só é considerada "confirmada em fonte oficial" quando aparece
+# no conteúdo de uma destas páginas. As URLs que aparecem aqui e NÃO estão no catálogo
+# são listadas no relatório como lacunas: é assim que se detecta o que está faltando.
+#
+# Só entram páginas mantidas pelo próprio órgão responsável. Blog, fórum e
+# documentação de fornecedor não são fonte.
+fontes:
+  - id: nfe-portal-producao
+    orgao: Portal Nacional da NF-e (ENCAT / RFB)
+    descricao: Relação de serviços web da NF-e, produção
+    url: "https://www.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+
+  - id: nfe-portal-homologacao
+    orgao: Portal Nacional da NF-e (ENCAT / RFB)
+    descricao: Relação de serviços web da NF-e, homologação
+    url: "https://hom.nfe.fazenda.gov.br/portal/webServices.aspx?tipoConteudo=OUC/YVNWZfo="
+
+  - id: cte-portal-producao
+    orgao: Portal Nacional do CT-e
+    descricao: Relação de serviços web do CT-e, produção
+    url: "https://www.cte.fazenda.gov.br/portal/webServices.aspx"
+
+  - id: svrs-nfe
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços NF-e da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Nfe/Servicos"
+
+  - id: svrs-nfce
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços NFC-e da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Nfce/Servicos"
+
+  - id: svrs-cte
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços CT-e da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Cte/Servicos"
+
+  - id: svrs-mdfe
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços MDF-e (autorizador nacional)
+    url: "https://dfe-portal.svrs.rs.gov.br/Mdfe/Servicos"
+
+  - id: svrs-bpe
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços BP-e da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Bpe/Servicos"
+
+  - id: svrs-nf3e
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços NF3e da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Nf3e/Servicos"
+
+  - id: svrs-nfcom
+    orgao: SEFAZ Virtual RS
+    descricao: Serviços NFCom da SVRS
+    url: "https://dfe-portal.svrs.rs.gov.br/Nfcom/Servicos"
+
+  - id: gnre-portal
+    orgao: Portal GNRE (SEFAZ-PE)
+    descricao: Portal da GNRE, área de automação
+    url: "https://www.gnre.pe.gov.br/gnre/portal/GNRE_Principal.jsp"

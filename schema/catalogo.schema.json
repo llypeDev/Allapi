@@ -1,0 +1,173 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "catalogo.schema.json",
+  "title": "Arquivo do catálogo de serviços fiscais",
+  "description": "Um arquivo por ambiente compartilhado (escopo nacional) ou por estado (escopo uf).",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["escopo", "id", "nome", "servicos"],
+  "properties": {
+    "escopo": { "enum": ["nacional", "uf"] },
+    "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "nome": { "type": "string", "minLength": 3 },
+    "mantenedor": { "type": "string" },
+    "uf": { "$ref": "#/$defs/uf" },
+    "status": {
+      "description": "fechado só é aceito quando o gate do arquivo passa.",
+      "enum": ["em_andamento", "fechado"],
+      "default": "em_andamento"
+    },
+    "atende": {
+      "description": "Somente escopo nacional: quais UFs dependem deste ambiente, por item da taxonomia.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["item", "ufs"],
+        "properties": {
+          "item": { "$ref": "#/$defs/itemRef" },
+          "ufs": {
+            "type": "array",
+            "minItems": 0,
+            "uniqueItems": true,
+            "items": { "$ref": "#/$defs/uf" }
+          },
+          "papel": { "enum": ["autorizacao", "contingencia"] },
+          "confirmado": {
+            "description": "true somente depois de conferido na fonte oficial.",
+            "type": "boolean",
+            "default": false
+          },
+          "nota": { "type": "string" }
+        }
+      }
+    },
+    "checklist": {
+      "description": "Somente escopo uf: uma entrada por item da taxonomia. Nenhum item pode ficar de fora.",
+      "type": "object",
+      "propertyNames": { "$ref": "#/$defs/itemRef" },
+      "additionalProperties": { "$ref": "#/$defs/resolucao" }
+    },
+    "servicos": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/servico" }
+    },
+    "notas": { "type": "string" }
+  },
+  "$defs": {
+    "uf": {
+      "enum": [
+        "AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA",
+        "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"
+      ]
+    },
+    "itemRef": {
+      "description": "categoria.item, conforme catalogo/taxonomia.yaml",
+      "type": "string",
+      "pattern": "^[a-z0-9_]+\\.[a-z0-9_]+$"
+    },
+    "data": { "type": "string", "format": "date" },
+    "evidencia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "consultado_em"],
+      "properties": {
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "consultado_em": { "$ref": "#/$defs/data" },
+        "nota": { "type": "string" }
+      }
+    },
+    "resolucao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["resolucao"],
+      "properties": {
+        "resolucao": {
+          "description": "proprio: o estado mantém o serviço. compartilhado: usa ambiente nacional/virtual. sem_api: existe só como portal ou programa, sem integração. nao_existe: o estado não oferece. pendente: ainda não investigado.",
+          "enum": ["proprio", "compartilhado", "sem_api", "nao_existe", "pendente"]
+        },
+        "compartilhado_com": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+        },
+        "evidencia": { "$ref": "#/$defs/evidencia" },
+        "nota": { "type": "string" }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "resolucao": { "const": "compartilhado" } } },
+          "then": { "required": ["compartilhado_com"] }
+        },
+        {
+          "if": { "properties": { "resolucao": { "enum": ["sem_api", "nao_existe"] } } },
+          "then": { "required": ["evidencia"] }
+        }
+      ]
+    },
+    "servico": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "item", "nome", "protocolo", "autenticacao", "endpoints", "origem"],
+      "properties": {
+        "id": {
+          "description": "Único em todo o catálogo. Convenção: <arquivo>.<item>.<servico>",
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(\\.[a-z0-9_]+)+$"
+        },
+        "item": { "$ref": "#/$defs/itemRef" },
+        "nome": { "type": "string", "minLength": 2 },
+        "descricao": { "type": "string" },
+        "versao": { "type": "string" },
+        "protocolo": { "enum": ["soap", "rest", "portal", "arquivo"] },
+        "autenticacao": {
+          "enum": ["nenhuma", "certificado_icp", "login_senha", "token", "gov_br", "captcha"]
+        },
+        "endpoints": {
+          "type": "array",
+          "minItems": 1,
+          "items": { "$ref": "#/$defs/endpoint" }
+        },
+        "origem": {
+          "description": "De onde o registro veio. memoria e secundaria são candidatos: só contam como confirmados quando a URL aparece numa fonte oficial coletada.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tipo", "registrado_em"],
+          "properties": {
+            "tipo": { "enum": ["oficial", "secundaria", "memoria"] },
+            "registrado_em": { "$ref": "#/$defs/data" },
+            "referencias": {
+              "type": "array",
+              "items": { "type": "string", "format": "uri", "pattern": "^https?://" }
+            }
+          }
+        },
+        "notas": { "type": "string" }
+      }
+    },
+    "endpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ambiente", "url"],
+      "properties": {
+        "ambiente": { "enum": ["producao", "homologacao"] },
+        "url": { "type": "string", "format": "uri", "pattern": "^https?://" },
+        "contrato": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["tipo"],
+          "properties": {
+            "tipo": { "enum": ["wsdl", "openapi", "nenhum"] },
+            "url": { "type": "string", "format": "uri", "pattern": "^https?://" }
+          }
+        },
+        "contrato_restrito": {
+          "description": "true quando o contrato só é entregue com certificado digital; o gate aceita o endpoint sem contrato salvo, desde que o servidor responda.",
+          "type": "boolean",
+          "default": false
+        }
+      }
+    }
+  }
+}

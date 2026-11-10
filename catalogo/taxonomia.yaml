@@ -1,0 +1,60 @@
+# Taxonomia fixa do catálogo. É ela que define o que significa "100%":
+# todo estado precisa resolver TODOS os itens abaixo (ver checklist em catalogo/uf/*.yaml).
+# Mudar esta lista muda o critério de todos os estados; faça isso só por PR dedicado.
+categorias:
+  - id: documentos_fiscais
+    nome: Documentos fiscais eletrônicos
+    itens:
+      - { id: nfe, nome: "NF-e (modelo 55)" }
+      - { id: nfce, nome: "NFC-e (modelo 65)" }
+      - { id: cte, nome: "CT-e e CT-e OS (modelos 57 e 67)" }
+      - { id: mdfe, nome: "MDF-e (modelo 58)" }
+      - { id: bpe, nome: "BP-e (modelo 63)" }
+      - { id: nf3e, nome: "NF3e (modelo 66)" }
+      - { id: nfcom, nome: "NFCom (modelo 62)" }
+
+  - id: cadastro
+    nome: Cadastro de contribuintes
+    itens:
+      - { id: consulta_cadastro, nome: "Consulta de cadastro por web service (CadConsultaCadastro / CCC)" }
+      - { id: sintegra, nome: "Consulta pública ao cadastro (Sintegra ou equivalente)" }
+      - { id: inscricao_estadual, nome: "Inscrição, alteração e baixa de inscrição estadual" }
+
+  - id: arrecadacao
+    nome: Arrecadação
+    itens:
+      - { id: gnre, nome: "GNRE (guia nacional)" }
+      - { id: guia_propria, nome: "Guia própria do estado (DARE, DAE, DARJ etc.)" }
+      - { id: consulta_debitos, nome: "Consulta de débitos e pagamentos" }
+
+  - id: obrigacoes_acessorias
+    nome: Obrigações acessórias estaduais
+    itens:
+      - { id: apuracao_icms, nome: "Declaração de apuração do ICMS (GIA, DAPI, DIME, DMA etc.)" }
+      - { id: substituicao_tributaria, nome: "Declaração de substituição tributária (GIA-ST)" }
+      - { id: destda, nome: "DeSTDA (Simples Nacional)" }
+
+  - id: comunicacao_fisco
+    nome: Comunicação com o fisco
+    itens:
+      - { id: domicilio_eletronico, nome: "Domicílio eletrônico (DEC / DT-e)" }
+
+  - id: certidoes
+    nome: Certidões
+    itens:
+      - { id: cnd_emissao, nome: "Emissão de certidão de débitos estaduais" }
+      - { id: cnd_validacao, nome: "Validação de autenticidade de certidão" }
+
+  - id: registro
+    nome: Registro empresarial
+    itens:
+      - { id: junta_comercial, nome: "Junta Comercial" }
+      - { id: redesim, nome: "Integrador estadual da Redesim" }
+
+  - id: tabelas
+    nome: Tabelas de referência
+    itens:
+      - { id: cbenef, nome: "Códigos de benefício fiscal (cBenef)" }
+      - { id: aliquotas, nome: "Alíquotas internas e FCP" }
+      - { id: mva_pauta, nome: "MVA e pauta fiscal (PMPF)" }
+      - { id: codigos_receita, nome: "Códigos de receita para guias" }

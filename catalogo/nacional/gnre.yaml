@@ -1,0 +1,61 @@
+escopo: nacional
+id: gnre
+nome: Portal GNRE
+mantenedor: SEFAZ-PE
+status: em_andamento
+notas: >-
+  Semente inicial: URLs de produção citadas em fonte secundária (manual de integração republicado);
+  o host de homologação veio de fórum. Confirmar ambos no portal oficial.
+atende:
+  - item: arrecadacao.gnre
+    ufs: []
+    confirmado: false
+    nota: Relação de UFs que aceitam a GNRE por web service ainda não levantada.
+servicos:
+  - id: gnre.gnre.lote_recepcao
+    item: arrecadacao.gnre
+    nome: GnreLoteRecepcao
+    descricao: Envio de lote de guias para processamento
+    versao: "2.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao" }
+      - { ambiente: homologacao, url: "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao" }
+    origem:
+      tipo: secundaria
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://portalspedbrasil.com.br/?p=16547"
+
+  - id: gnre.gnre.resultado_lote
+    item: arrecadacao.gnre
+    nome: GnreResultadoLote
+    descricao: Consulta do resultado do processamento do lote
+    versao: "2.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote" }
+      - { ambiente: homologacao, url: "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote" }
+    origem:
+      tipo: secundaria
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://portalspedbrasil.com.br/?p=16547"
+
+  - id: gnre.gnre.config_uf
+    item: arrecadacao.gnre
+    nome: GnreConfigUF
+    descricao: Regras e campos exigidos por UF e por receita
+    versao: "2.00"
+    protocolo: soap
+    autenticacao: certificado_icp
+    endpoints:
+      - { ambiente: producao, url: "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF" }
+      - { ambiente: homologacao, url: "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF" }
+    origem:
+      tipo: secundaria
+      registrado_em: 2026-11-10
+      referencias:
+        - "https://portalspedbrasil.com.br/?p=16547"
