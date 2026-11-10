@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 import { carregarCatalogo, verificarSemantica } from "../src/catalogo.ts";
 import type { ArquivoCatalogo, Servico } from "../src/catalogo.ts";
 import { carregarDescartes, carregarFontes, extrairUrlsServico, normalizarUrl } from "../src/coleta.ts";
+import { carregarEstado } from "../src/estado.ts";
 import type { Estado } from "../src/estado.ts";
 import { analisar, gerarMarkdown } from "../src/relatorio.ts";
 import type { ResultadoSonda } from "../src/sonda.ts";
@@ -76,9 +77,8 @@ describe("catálogo do repositório", () => {
 
   it("não deixa nenhum arquivo marcado como fechado sem passar no gate", () => {
     const c = carregarCatalogo(RAIZ);
-    const estado: Estado = { fontes: {}, sondas: {} };
-    for (const g of analisar(c, estado).gates) {
-      if (g.arquivo.status === "fechado") assert.equal(g.aprovado, true, g.arquivo.id);
+    for (const g of analisar(c, carregarEstado(RAIZ)).gates) {
+      if (g.arquivo.status === "fechado") assert.deepEqual(g.pendencias, [], g.arquivo.id);
     }
   });
 });
@@ -221,15 +221,29 @@ describe("gate", () => {
     assert.equal(analise.gates[0]!.aprovado, false);
   });
 
-  it("não fecha estado com item pendente nem com dependência que não passou", () => {
-    const svrs = nacional("svrs", [servico("svrs.nfe.aut", URL_A)]);
+  it("não fecha estado com item pendente, dependência com pendência ou uso sem evidência", () => {
+    const ev = { url: "https://portal.exemplo.gov.br", consultado_em: "2026-01-01" };
+    const svrs = nacional("svrs", [servico("svrs.nfe.aut", URL_A)], { atende: [{ item: ITENS[0]!, ufs: ["SP"], confirmado: true, evidencia: ev }] });
     const ok = { fontes: fonteCom(URL_A), sondas: { [chave]: sonda(URL_A) } };
 
     const dependente = analisar(montar([svrs, estadoUf()]), { fontes: {}, sondas: {} }).gates[1]!;
-    assert.ok(dependente.pendencias.some((p) => p.includes('depende de "svrs", que ainda não passou')));
+    assert.ok(dependente.pendencias.some((p) => p.includes('depende de "svrs", cujos serviços desse item ainda têm pendência')));
 
     const fechavel = analisar(montar([svrs, estadoUf()]), ok).gates[1]!;
     assert.deepEqual(fechavel.pendencias, []);
+
+    // O ambiente não confirma a UF: o estado precisa trazer a própria evidência.
+    const semRelacao = nacional("svrs", [servico("svrs.nfe.aut", URL_A)]);
+    const semEvidencia = analisar(montar([semRelacao, estadoUf()]), ok).gates[1]!;
+    assert.ok(semEvidencia.pendencias.some((p) => p.includes("sem evidência")));
+    const comEvidencia = estadoUf({
+      checklist: { ...estadoUf().checklist!, "documentos_fiscais.nfe": { resolucao: "compartilhado", compartilhado_com: ["svrs"], evidencia: ev } },
+    });
+    assert.deepEqual(analisar(montar([semRelacao, comEvidencia]), ok).gates[1]!.pendencias, []);
+
+    // Pendência em outro item do ambiente não trava o estado.
+    const outroItem = nacional("svrs", [servico("svrs.nfe.aut", URL_A), servico("svrs.sintegra.x", "https://x.exemplo.gov.br/a.asmx", { item: "cadastro.sintegra" })], svrs);
+    assert.deepEqual(analisar(montar([{ ...outroItem, id: "svrs", caminho: svrs.caminho }, estadoUf()]), ok).gates[1]!.pendencias, []);
 
     const pendente = estadoUf({ checklist: { ...estadoUf().checklist!, "cadastro.sintegra": { resolucao: "pendente" } } });
     const g = analisar(montar([svrs, pendente]), ok).gates[1]!;

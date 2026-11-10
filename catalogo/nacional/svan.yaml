@@ -2,7 +2,7 @@ escopo: nacional
 id: svan
 nome: SEFAZ Virtual do Ambiente Nacional (SVAN)
 mantenedor: Receita Federal do Brasil
-status: em_andamento
+status: fechado
 notas: >-
   Serviços e relação de UFs conferidos no Portal Nacional da NF-e (coleta de 2026-11-10).
   Os endpoints respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.

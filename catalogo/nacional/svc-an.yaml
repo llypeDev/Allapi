@@ -2,7 +2,7 @@ escopo: nacional
 id: svc-an
 nome: SEFAZ Virtual de Contingência do Ambiente Nacional (SVC-AN)
 mantenedor: Receita Federal do Brasil
-status: em_andamento
+status: fechado
 notas: >-
   Serviços e relação de UFs conferidos no Portal Nacional da NF-e (coleta de 2026-11-10).
   Depois da unificação com a SVAN, a SVC-AN atende nos mesmos endereços da SVAN (www.sefazvirtual.fazenda.gov.br).

@@ -2,7 +2,7 @@ escopo: nacional
 id: svc-rs
 nome: SEFAZ Virtual de Contingência do Rio Grande do Sul (SVC-RS)
 mantenedor: SEFAZ-RS
-status: em_andamento
+status: fechado
 notas: >-
   Serviços e relação de UFs conferidos no Portal Nacional da NF-e (coleta de 2026-11-10).
   A SVC-RS da NF-e atende nos mesmos endereços da SVRS e não oferece inutilização.

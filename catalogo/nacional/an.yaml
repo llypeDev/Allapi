@@ -2,7 +2,7 @@ escopo: nacional
 id: an
 nome: Ambiente Nacional (AN)
 mantenedor: Receita Federal do Brasil
-status: em_andamento
+status: fechado
 notas: >-
   Serviços nacionais da NF-e e do CT-e, usados por contribuintes de qualquer UF.
   Conferidos contra os portais nacionais da NF-e (produção e homologação) e do CT-e (produção), coleta de 2026-11-10.

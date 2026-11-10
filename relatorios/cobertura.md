@@ -15,11 +15,11 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 
 | Arquivo | Escopo | Status | Endpoints | Aprovados | Pendências | Gate |
 |---|---|---|---:|---:|---:|---|
-| an | nacional | em_andamento | 6 | 6 | 0 | passa |
+| an | nacional | fechado | 6 | 6 | 0 | passa |
 | gnre | nacional | em_andamento | 6 | 0 | 13 | não passa |
-| svan | nacional | em_andamento | 12 | 12 | 0 | passa |
-| svc-an | nacional | em_andamento | 12 | 12 | 0 | passa |
-| svc-rs | nacional | em_andamento | 10 | 10 | 0 | passa |
+| svan | nacional | fechado | 12 | 12 | 0 | passa |
+| svc-an | nacional | fechado | 12 | 12 | 0 | passa |
+| svc-rs | nacional | fechado | 10 | 10 | 0 | passa |
 | svrs | nacional | em_andamento | 84 | 84 | 4 | não passa |
 | svsp | nacional | em_andamento | 16 | 16 | 14 | não passa |
 

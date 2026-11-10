@@ -145,8 +145,21 @@ export function analisar(catalogo: Catalogo, estado: Estado): Analise {
         for (const ref of r.compartilhado_com ?? []) {
           const dep = porId.get(ref);
           const gateDep = gates.get(ref);
-          if (!dep || !gateDep) pendencias.push(`checklist: ${item} depende de "${ref}", que não existe`);
-          else if (!gateDep.aprovado) pendencias.push(`checklist: ${item} depende de "${ref}", que ainda não passou no gate`);
+          if (!dep || !gateDep) {
+            pendencias.push(`checklist: ${item} depende de "${ref}", que não existe`);
+            continue;
+          }
+          // A dependência é por item: o estado não espera o ambiente inteiro, só os serviços que usa.
+          const doItem = gateDep.verificacoes.filter((v) => v.servico.item === item);
+          if (doItem.length === 0) {
+            pendencias.push(`checklist: ${item} depende de "${ref}", que não tem serviço cadastrado para esse item`);
+          } else if (doItem.some((v) => !v.aprovado)) {
+            pendencias.push(`checklist: ${item} depende de "${ref}", cujos serviços desse item ainda têm pendência`);
+          }
+          const naRelacao = (dep.atende ?? []).some((at) => at.item === item && at.confirmado && at.ufs.includes(a.uf ?? ""));
+          if (!naRelacao && !r.evidencia) {
+            pendencias.push(`checklist: ${item} declara uso de "${ref}" sem evidência (a relação oficial de UFs de "${ref}" não confirma ${a.uf})`);
+          }
         }
       }
     }

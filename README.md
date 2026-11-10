@@ -15,7 +15,7 @@ Não dá para provar que se encontrou tudo num universo aberto. Então o critér
    - o **servidor responde**;
    - o **contrato** (WSDL ou OpenAPI) foi baixado e salvo em `contratos/`, ou o endpoint está marcado como `contrato_restrito` e o servidor de fato recusou por falta de certificado.
 4. **Sem lacunas.** Se a fonte oficial publica uma URL no mesmo host que não está no catálogo, o gate não passa.
-5. **Dependências fechadas.** Um estado que usa um ambiente compartilhado (SVRS, SVAN, GNRE etc.) só fecha depois que esse ambiente passa no gate.
+5. **Dependências verificadas.** Um estado que usa um ambiente compartilhado (SVRS, SVAN, GNRE etc.) num item só fecha quando os serviços desse ambiente para aquele item estão aprovados e há evidência de que o estado realmente usa o ambiente: a relação oficial de UFs do ambiente ou uma evidência no próprio checklist do estado.
 
 Registros vindos de memória ou de fonte secundária (blog, fórum, documentação de fornecedor) entram como candidatos e não contam como confirmados.
 
