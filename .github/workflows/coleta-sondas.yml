@@ -25,8 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 25
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
         with:
           node-version: 22
           cache: npm
@@ -43,7 +43,10 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add estado contratos relatorios fontes/snapshots
+          # contratos/ e fontes/snapshots/ só existem depois que algo foi baixado.
+          for caminho in estado contratos relatorios fontes/snapshots; do
+            if [ -e "$caminho" ]; then git add "$caminho"; fi
+          done
           if git diff --cached --quiet; then
             echo "Nada mudou."
             exit 0
