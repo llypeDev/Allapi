@@ -2,7 +2,7 @@
   "an.cte.distribuicao_dfe@homologacao": {
     "url": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
     "url_contrato": "https://hom1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "verificado_em": "2026-11-10T04:39:51.875Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -16,12 +16,13 @@
       "sujeito": "hom1.cte.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2026-12-19T18:39:44.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "an.cte.distribuicao_dfe@producao": {
     "url": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx",
     "url_contrato": "https://www1.cte.fazenda.gov.br/CTeDistribuicaoDFe/CTeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "verificado_em": "2026-11-10T04:39:51.875Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -35,12 +36,13 @@
       "sujeito": "www1.cte.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2026-12-19T18:41:22.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "an.nfe.distribuicao_dfe@homologacao": {
     "url": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
     "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.070Z",
+    "verificado_em": "2026-11-10T04:39:51.874Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -54,12 +56,13 @@
       "sujeito": "hom1.nfe.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2026-12-19T18:38:46.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "an.nfe.distribuicao_dfe@producao": {
     "url": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx",
     "url_contrato": "https://www1.nfe.fazenda.gov.br/NFeDistribuicaoDFe/NFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.066Z",
+    "verificado_em": "2026-11-10T04:39:51.871Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -73,12 +76,13 @@
       "sujeito": "www1.nfe.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:32:37.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "an.nfe.recepcao_evento@homologacao": {
     "url": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom1.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "verificado_em": "2026-11-10T04:39:51.875Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -92,12 +96,13 @@
       "sujeito": "hom1.nfe.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2026-12-19T18:38:46.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "an.nfe.recepcao_evento@producao": {
     "url": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.nfe.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:00.071Z",
+    "verificado_em": "2026-11-10T04:39:51.875Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -111,12 +116,13 @@
       "sujeito": "www.nfe.fazenda.gov.br",
       "emissor": "YR2",
       "valido_ate": "2027-01-17T11:02:16.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "gnre.gnre.config_uf@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
-    "verificado_em": "2026-11-10T04:36:03.372Z",
+    "verificado_em": "2026-11-10T04:39:54.395Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -130,12 +136,13 @@
       "sujeito": "www.testegnre.pe.gov.br",
       "emissor": "YR2",
       "valido_ate": "2027-01-27T14:54:45.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden Forbidden You don't have permission to access this resource. IBM_HTTP_Server at www.testegnre.pe.gov.br Port 443"
   },
   "gnre.gnre.config_uf@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreConfigUF?wsdl",
-    "verificado_em": "2026-11-10T04:36:02.078Z",
+    "verificado_em": "2026-11-10T04:39:54.382Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -149,12 +156,13 @@
       "sujeito": "www.gnre.pe.gov.br",
       "emissor": "Sectigo Public Server Authentication CA OV R36",
       "valido_ate": "2026-12-18T23:59:59.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden 403 Forbidden nginx"
   },
   "gnre.gnre.lote_recepcao@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
-    "verificado_em": "2026-11-10T04:36:01.756Z",
+    "verificado_em": "2026-11-10T04:39:53.861Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -168,12 +176,13 @@
       "sujeito": "www.testegnre.pe.gov.br",
       "emissor": "YR2",
       "valido_ate": "2027-01-27T14:54:45.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden Forbidden You don't have permission to access this resource. IBM_HTTP_Server at www.testegnre.pe.gov.br Port 443"
   },
   "gnre.gnre.lote_recepcao@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreLoteRecepcao?wsdl",
-    "verificado_em": "2026-11-10T04:36:01.743Z",
+    "verificado_em": "2026-11-10T04:39:53.675Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -187,12 +196,13 @@
       "sujeito": "www.gnre.pe.gov.br",
       "emissor": "Sectigo Public Server Authentication CA OV R36",
       "valido_ate": "2026-12-18T23:59:59.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden 403 Forbidden nginx"
   },
   "gnre.gnre.resultado_lote@homologacao": {
     "url": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
     "url_contrato": "https://www.testegnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
-    "verificado_em": "2026-11-10T04:36:02.069Z",
+    "verificado_em": "2026-11-10T04:39:54.196Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -206,12 +216,13 @@
       "sujeito": "www.testegnre.pe.gov.br",
       "emissor": "YR2",
       "valido_ate": "2027-01-27T14:54:45.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden Forbidden You don't have permission to access this resource. IBM_HTTP_Server at www.testegnre.pe.gov.br Port 443"
   },
   "gnre.gnre.resultado_lote@producao": {
     "url": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote",
     "url_contrato": "https://www.gnre.pe.gov.br/gnreWS/services/GnreResultadoLote?wsdl",
-    "verificado_em": "2026-11-10T04:36:01.918Z",
+    "verificado_em": "2026-11-10T04:39:53.965Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -225,12 +236,13 @@
       "sujeito": "www.gnre.pe.gov.br",
       "emissor": "Sectigo Public Server Authentication CA OV R36",
       "valido_ate": "2026-12-18T23:59:59.000Z"
-    }
+    },
+    "detalhe": "403 Forbidden 403 Forbidden nginx"
   },
   "svan.nfe.autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:03.774Z",
+    "verificado_em": "2026-11-10T04:39:55.133Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -244,12 +256,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:03.390Z",
+    "verificado_em": "2026-11-10T04:39:55.132Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -263,12 +276,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.consulta_protocolo@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:05.767Z",
+    "verificado_em": "2026-11-10T04:39:57.382Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -282,12 +296,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.consulta_protocolo@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:05.144Z",
+    "verificado_em": "2026-11-10T04:39:57.114Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -301,12 +316,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.inutilizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:05.904Z",
+    "verificado_em": "2026-11-10T04:39:58.092Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -320,12 +336,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.inutilizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeInutilizacao4/NFeInutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:05.902Z",
+    "verificado_em": "2026-11-10T04:39:57.422Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -339,12 +356,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.recepcao_evento@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:07.122Z",
+    "verificado_em": "2026-11-10T04:39:59.555Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -358,12 +376,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.recepcao_evento@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:07.105Z",
+    "verificado_em": "2026-11-10T04:39:59.010Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -377,12 +396,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.ret_autorizacao@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:04.283Z",
+    "verificado_em": "2026-11-10T04:39:57.099Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -396,12 +416,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.ret_autorizacao@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:04.279Z",
+    "verificado_em": "2026-11-10T04:39:56.034Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -415,12 +436,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.status_servico@homologacao": {
     "url": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://hom.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:07.104Z",
+    "verificado_em": "2026-11-10T04:39:59.008Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -434,12 +456,13 @@
       "sujeito": "hom.sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:58:25.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svan.nfe.status_servico@producao": {
     "url": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://www.sefazvirtual.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:06.676Z",
+    "verificado_em": "2026-11-10T04:39:58.466Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -453,12 +476,13 @@
       "sujeito": "sefazvirtual.fazenda.gov.br",
       "emissor": "AC SERPRO AR46 OV TLS CA 2025",
       "valido_ate": "2027-04-26T12:57:57.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-an.nfe.autorizacao@homologacao": {
     "url": "https://hom.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://hom.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.055Z",
+    "verificado_em": "2026-11-10T04:39:59.742Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -467,7 +491,7 @@
   "svc-an.nfe.autorizacao@producao": {
     "url": "https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx",
     "url_contrato": "https://www.svc.fazenda.gov.br/NFeAutorizacao4/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:07.782Z",
+    "verificado_em": "2026-11-10T04:39:59.740Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -476,7 +500,7 @@
   "svc-an.nfe.consulta_protocolo@homologacao": {
     "url": "https://hom.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://hom.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.414Z",
+    "verificado_em": "2026-11-10T04:40:00.109Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -485,7 +509,7 @@
   "svc-an.nfe.consulta_protocolo@producao": {
     "url": "https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx",
     "url_contrato": "https://www.svc.fazenda.gov.br/NFeConsultaProtocolo4/NFeConsultaProtocolo4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.241Z",
+    "verificado_em": "2026-11-10T04:40:00.075Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -494,7 +518,7 @@
   "svc-an.nfe.recepcao_evento@homologacao": {
     "url": "https://hom.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://hom.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.731Z",
+    "verificado_em": "2026-11-10T04:40:00.456Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -503,7 +527,7 @@
   "svc-an.nfe.recepcao_evento@producao": {
     "url": "https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx",
     "url_contrato": "https://www.svc.fazenda.gov.br/NFeRecepcaoEvento4/NFeRecepcaoEvento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.601Z",
+    "verificado_em": "2026-11-10T04:40:00.451Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -512,7 +536,7 @@
   "svc-an.nfe.ret_autorizacao@homologacao": {
     "url": "https://hom.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://hom.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.229Z",
+    "verificado_em": "2026-11-10T04:40:00.074Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -521,7 +545,7 @@
   "svc-an.nfe.ret_autorizacao@producao": {
     "url": "https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://www.svc.fazenda.gov.br/NFeRetAutorizacao4/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.068Z",
+    "verificado_em": "2026-11-10T04:39:59.743Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -530,7 +554,7 @@
   "svc-an.nfe.status_servico@homologacao": {
     "url": "https://hom.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://hom.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.575Z",
+    "verificado_em": "2026-11-10T04:40:00.261Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -539,7 +563,7 @@
   "svc-an.nfe.status_servico@producao": {
     "url": "https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx",
     "url_contrato": "https://www.svc.fazenda.gov.br/NFeStatusServico4/NFeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.417Z",
+    "verificado_em": "2026-11-10T04:40:00.261Z",
     "origem": "github-actions",
     "responde": false,
     "diagnostico": "dns_falhou",
@@ -548,7 +572,7 @@
   "svc-rs.nfe.autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.795Z",
+    "verificado_em": "2026-11-10T04:40:00.650Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -563,12 +587,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.763Z",
+    "verificado_em": "2026-11-10T04:40:00.466Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -583,12 +608,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.consulta_protocolo@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:09.782Z",
+    "verificado_em": "2026-11-10T04:40:00.837Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -603,12 +629,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.consulta_protocolo@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.951Z",
+    "verificado_em": "2026-11-10T04:40:00.802Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -623,12 +650,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.recepcao_evento@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:09.955Z",
+    "verificado_em": "2026-11-10T04:40:02.989Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -643,12 +671,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.recepcao_evento@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:09.945Z",
+    "verificado_em": "2026-11-10T04:40:02.940Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -663,12 +692,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.ret_autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.887Z",
+    "verificado_em": "2026-11-10T04:40:00.801Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -683,12 +713,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.ret_autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:08.802Z",
+    "verificado_em": "2026-11-10T04:40:00.650Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -703,12 +734,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.status_servico@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:09.876Z",
+    "verificado_em": "2026-11-10T04:40:02.939Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -723,12 +755,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svc-rs.nfe.status_servico@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:09.844Z",
+    "verificado_em": "2026-11-10T04:40:02.936Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -743,17 +776,18 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
-  "svrs.consulta_cadastro.cad_consulta_cadastro@homologacao": {
-    "url": "https://cad-homologacao.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
-    "url_contrato": "https://cad-homologacao.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.810Z",
+  "svrs.bpe.consulta@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.770Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
     "enderecos": [
-      "200.233.4.155"
+      "200.233.4.157"
     ],
     "status_http": 403,
     "tls": {
@@ -763,52 +797,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
   },
-  "svrs.consulta_cadastro.cad_consulta_cadastro@producao": {
-    "url": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
-    "url_contrato": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.808Z",
-    "origem": "github-actions",
-    "responde": true,
-    "diagnostico": "acesso_negado",
-    "enderecos": [
-      "4.201.99.36"
-    ],
-    "status_http": 403,
-    "tls": {
-      "protocolo": "TLSv1.2",
-      "cadeia_publica": false,
-      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
-      "sujeito": "*.svrs.rs.gov.br",
-      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
-      "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
-  },
-  "svrs.cte.consulta@homologacao": {
-    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
-    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.044Z",
-    "origem": "github-actions",
-    "responde": true,
-    "diagnostico": "acesso_negado",
-    "enderecos": [
-      "200.233.4.142"
-    ],
-    "status_http": 403,
-    "tls": {
-      "protocolo": "TLSv1.2",
-      "cadeia_publica": false,
-      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
-      "sujeito": "*.svrs.rs.gov.br",
-      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
-      "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
-  },
-  "svrs.cte.consulta@producao": {
-    "url": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
-    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.623Z",
+  "svrs.bpe.consulta@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeConsulta/bpeConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.715Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -823,12 +818,324 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.bpe.qrcode@producao": {
+    "url": "https://dfe-portal.svrs.rs.gov.br/bpe/qrCode",
+    "url_contrato": null,
+    "verificado_em": "2026-11-10T04:40:13.387Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "http_200_sem_contrato",
+    "enderecos": [
+      "200.233.4.174"
+    ],
+    "status_http": 200,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "GlobalSign GCC R46 AlphaSSL CA 2025",
+      "valido_ate": "2027-03-12T12:56:11.000Z"
+    }
+  },
+  "svrs.bpe.recepcao_evento@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.341Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.157"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
+  },
+  "svrs.bpe.recepcao_evento@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoEvento/bpeRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.341Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.bpe.recepcao_ta@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.691Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.157"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
+  },
+  "svrs.bpe.recepcao_ta@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/WS/BPeRecepcaoTA/BPeRecepcaoTA.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.669Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.bpe.recepcao_tm@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.641Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.157"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
+  },
+  "svrs.bpe.recepcao_tm@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcaoTM/bpeRecepcaoTM.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.142Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.bpe.recepcao@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.088Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.157"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
+  },
+  "svrs.bpe.recepcao@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeRecepcao/bpeRecepcao.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.067Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.bpe.status_servico@homologacao": {
+    "url": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx",
+    "url_contrato": "https://bpe-homologacao.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.313Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.157"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "IIS 10.0 Detailed Error - 403.7 - Forbidden HTTP Error 403.7 - Forbidden The page you are attempting to access requires your browser to have a Secure Sockets La"
+  },
+  "svrs.bpe.status_servico@producao": {
+    "url": "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx",
+    "url_contrato": "https://bpe.svrs.rs.gov.br/ws/bpeStatusServico/bpeStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:10.773Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.consulta_cadastro.consulta_cadastro@producao": {
+    "url": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx",
+    "url_contrato": "https://cad.svrs.rs.gov.br/ws/cadconsultacadastro/cadconsultacadastro4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:07.348Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "4.201.99.36"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.cte.consulta@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:08.110Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.cte.consulta@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeConsultaV4/CTeConsultaV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:08.105Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.cte.qrcode@producao": {
+    "url": "https://dfe-portal.svrs.rs.gov.br/cte/qrCode",
+    "url_contrato": null,
+    "verificado_em": "2026-11-10T04:40:13.346Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "http_200_sem_contrato",
+    "enderecos": [
+      "200.233.4.174"
+    ],
+    "status_http": 200,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "GlobalSign GCC R46 AlphaSSL CA 2025",
+      "valido_ate": "2027-03-12T12:56:11.000Z"
     }
   },
   "svrs.cte.recepcao_evento@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.244Z",
+    "verificado_em": "2026-11-10T04:40:08.723Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -843,12 +1150,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_evento@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoEventoV4/CTeRecepcaoEventoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.115Z",
+    "verificado_em": "2026-11-10T04:40:08.676Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -863,12 +1171,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_gtve@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.608Z",
+    "verificado_em": "2026-11-10T04:40:08.037Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -883,12 +1192,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_gtve@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoGTVeV4/CTeRecepcaoGTVeV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.473Z",
+    "verificado_em": "2026-11-10T04:40:08.016Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -903,12 +1213,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_os@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.432Z",
+    "verificado_em": "2026-11-10T04:40:07.989Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -923,12 +1234,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_os@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoOSV4/CTeRecepcaoOSV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.426Z",
+    "verificado_em": "2026-11-10T04:40:07.471Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -943,12 +1255,55 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.cte.recepcao_simp@homologacao": {
+    "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx",
+    "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:07.435Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.142"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.cte.recepcao_simp@producao": {
+    "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx",
+    "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSimpV4/CTeRecepcaoSimpV4.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:07.412Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_sinc@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:14.403Z",
+    "verificado_em": "2026-11-10T04:40:07.410Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -963,12 +1318,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.recepcao_sinc@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeRecepcaoSincV4/CTeRecepcaoSincV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.977Z",
+    "verificado_em": "2026-11-10T04:40:07.378Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -983,12 +1339,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.status_servico@homologacao": {
     "url": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
     "url_contrato": "https://cte-homologacao.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.062Z",
+    "verificado_em": "2026-11-10T04:40:08.655Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1003,12 +1360,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.cte.status_servico@producao": {
     "url": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx",
     "url_contrato": "https://cte.svrs.rs.gov.br/ws/CTeStatusServicoV4/CTeStatusServicoV4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.060Z",
+    "verificado_em": "2026-11-10T04:40:08.158Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1023,12 +1381,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.cons_nao_enc@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.358Z",
+    "verificado_em": "2026-11-10T04:40:09.980Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1043,12 +1402,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.cons_nao_enc@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsNaoEnc/MDFeConsNaoEnc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.350Z",
+    "verificado_em": "2026-11-10T04:40:09.498Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1063,12 +1423,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.consulta@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.733Z",
+    "verificado_em": "2026-11-10T04:40:09.302Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1083,12 +1444,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.consulta@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeConsulta/MDFeConsulta.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.727Z",
+    "verificado_em": "2026-11-10T04:40:08.789Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1103,12 +1465,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.distribuicao_dfe@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.596Z",
+    "verificado_em": "2026-11-10T04:40:10.030Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1123,12 +1486,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.distribuicao_dfe@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeDistribuicaoDFe/MDFeDistribuicaoDFe.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.405Z",
+    "verificado_em": "2026-11-10T04:40:10.015Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1143,12 +1507,32 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.mdfe.qrcode@producao": {
+    "url": "https://dfe-portal.svrs.rs.gov.br/mdfe/qrCode",
+    "url_contrato": null,
+    "verificado_em": "2026-11-10T04:40:13.353Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "http_200_sem_contrato",
+    "enderecos": [
+      "200.233.4.174"
+    ],
+    "status_http": 200,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "GlobalSign GCC R46 AlphaSSL CA 2025",
+      "valido_ate": "2027-03-12T12:56:11.000Z"
     }
   },
   "svrs.mdfe.recepcao_evento@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.346Z",
+    "verificado_em": "2026-11-10T04:40:09.411Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1163,12 +1547,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.recepcao_evento@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoEvento/MDFeRecepcaoEvento.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:16.079Z",
+    "verificado_em": "2026-11-10T04:40:09.409Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1183,12 +1568,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.recepcao_sinc@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.664Z",
+    "verificado_em": "2026-11-10T04:40:08.780Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1203,12 +1589,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.recepcao_sinc@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeRecepcaoSinc/MDFeRecepcaoSinc.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.286Z",
+    "verificado_em": "2026-11-10T04:40:08.733Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1223,12 +1610,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.status_servico@homologacao": {
     "url": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
     "url_contrato": "https://mdfe-homologacao.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.923Z",
+    "verificado_em": "2026-11-10T04:40:09.379Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1243,12 +1631,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.mdfe.status_servico@producao": {
     "url": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx",
     "url_contrato": "https://mdfe.svrs.rs.gov.br/ws/MDFeStatusServico/MDFeStatusServico.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:15.739Z",
+    "verificado_em": "2026-11-10T04:40:09.335Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1263,12 +1652,200 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.consulta@homologacao": {
+    "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx",
+    "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.983Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.175"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.consulta@producao": {
+    "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx",
+    "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eConsulta/nf3eConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.447Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.qrcode@producao": {
+    "url": "https://dfe-portal.svrs.rs.gov.br/nf3e/qrCode",
+    "url_contrato": null,
+    "verificado_em": "2026-11-10T04:40:13.412Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "http_200_sem_contrato",
+    "enderecos": [
+      "200.233.4.174"
+    ],
+    "status_http": 200,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "GlobalSign GCC R46 AlphaSSL CA 2025",
+      "valido_ate": "2027-03-12T12:56:11.000Z"
     }
+  },
+  "svrs.nf3e.recepcao_evento@homologacao": {
+    "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx",
+    "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.083Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.175"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.recepcao_evento@producao": {
+    "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx",
+    "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoEvento/nf3eRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.041Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.recepcao_sinc@homologacao": {
+    "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx",
+    "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.428Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.175"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.recepcao_sinc@producao": {
+    "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx",
+    "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eRecepcaoSinc/nf3eRecepcaoSinc.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:11.377Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.status_servico@homologacao": {
+    "url": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx",
+    "url_contrato": "https://nf3e-homologacao.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.021Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.175"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nf3e.status_servico@producao": {
+    "url": "https://nf3e.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx",
+    "url_contrato": "https://nf3e.svrs.rs.gov.br/ws/nf3eStatusServico/nf3eStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.013Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.autorizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.133Z",
+    "verificado_em": "2026-11-10T04:40:05.482Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1283,12 +1860,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.autorizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.054Z",
+    "verificado_em": "2026-11-10T04:40:05.478Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1303,12 +1881,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.consulta_protocolo@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.684Z",
+    "verificado_em": "2026-11-10T04:40:05.576Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1323,12 +1902,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.consulta_protocolo@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.562Z",
+    "verificado_em": "2026-11-10T04:40:05.563Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1343,12 +1923,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.inutilizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.112Z",
+    "verificado_em": "2026-11-10T04:40:06.721Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1363,12 +1944,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.inutilizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.827Z",
+    "verificado_em": "2026-11-10T04:40:06.720Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1383,12 +1965,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.recepcao_evento@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.434Z",
+    "verificado_em": "2026-11-10T04:40:06.789Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1403,12 +1986,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.recepcao_evento@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.360Z",
+    "verificado_em": "2026-11-10T04:40:06.777Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1423,12 +2007,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.ret_autorizacao@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.503Z",
+    "verificado_em": "2026-11-10T04:40:05.506Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1443,12 +2028,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.ret_autorizacao@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:12.494Z",
+    "verificado_em": "2026-11-10T04:40:05.484Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1463,12 +2049,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.status_servico@homologacao": {
     "url": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfce-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.337Z",
+    "verificado_em": "2026-11-10T04:40:06.755Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1483,12 +2070,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfce.status_servico@producao": {
     "url": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfce.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:13.188Z",
+    "verificado_em": "2026-11-10T04:40:06.741Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1503,12 +2091,200 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.consulta@homologacao": {
+    "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx",
+    "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.685Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.177"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.consulta@producao": {
+    "url": "https://nfcom.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx",
+    "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComConsulta/NFComConsulta.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.683Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.qrcode@producao": {
+    "url": "https://dfe-portal.svrs.rs.gov.br/nfcom/qrCode",
+    "url_contrato": null,
+    "verificado_em": "2026-11-10T04:40:13.438Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "http_200_sem_contrato",
+    "enderecos": [
+      "200.233.4.174"
+    ],
+    "status_http": 200,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": true,
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "GlobalSign GCC R46 AlphaSSL CA 2025",
+      "valido_ate": "2027-03-12T12:56:11.000Z"
     }
+  },
+  "svrs.nfcom.recepcao_evento@homologacao": {
+    "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx",
+    "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:13.326Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.177"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.recepcao_evento@producao": {
+    "url": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx",
+    "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcaoEvento/NFComRecepcaoEvento.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.785Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.recepcao@homologacao": {
+    "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx",
+    "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.649Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.177"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.recepcao@producao": {
+    "url": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx",
+    "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComRecepcao/NFComRecepcao.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.128Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.status_servico@homologacao": {
+    "url": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx",
+    "url_contrato": "https://nfcom-homologacao.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.758Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "200.233.4.177"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
+  },
+  "svrs.nfcom.status_servico@producao": {
+    "url": "https://nfcom.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx",
+    "url_contrato": "https://nfcom.svrs.rs.gov.br/WS/NFComStatusServico/NFComStatusServico.asmx?wsdl",
+    "verificado_em": "2026-11-10T04:40:12.701Z",
+    "origem": "github-actions",
+    "responde": true,
+    "diagnostico": "acesso_negado",
+    "enderecos": [
+      "74.163.169.34"
+    ],
+    "status_http": 403,
+    "tls": {
+      "protocolo": "TLSv1.2",
+      "cadeia_publica": false,
+      "erro_cadeia": "UNABLE_TO_GET_ISSUER_CERT_LOCALLY",
+      "sujeito": "*.svrs.rs.gov.br",
+      "emissor": "Autoridade Certificadora do SERPRO SSLv1",
+      "valido_ate": "2027-07-03T17:49:30.000Z"
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:10.560Z",
+    "verificado_em": "2026-11-10T04:40:03.000Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1523,12 +2299,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeAutorizacao/NFeAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:10.449Z",
+    "verificado_em": "2026-11-10T04:40:02.998Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1543,12 +2320,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.consulta_protocolo@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.045Z",
+    "verificado_em": "2026-11-10T04:40:04.194Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1563,12 +2341,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.consulta_protocolo@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeConsulta/NfeConsulta4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:10.827Z",
+    "verificado_em": "2026-11-10T04:40:03.672Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1583,12 +2362,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.inutilizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.382Z",
+    "verificado_em": "2026-11-10T04:40:04.800Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1603,12 +2383,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.inutilizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/nfeinutilizacao/nfeinutilizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.220Z",
+    "verificado_em": "2026-11-10T04:40:04.201Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1623,12 +2404,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.recepcao_evento@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.837Z",
+    "verificado_em": "2026-11-10T04:40:04.883Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1643,12 +2425,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.recepcao_evento@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/recepcaoevento/recepcaoevento4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.705Z",
+    "verificado_em": "2026-11-10T04:40:04.882Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1663,12 +2446,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.ret_autorizacao@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:10.783Z",
+    "verificado_em": "2026-11-10T04:40:03.646Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1683,12 +2467,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.ret_autorizacao@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeRetAutorizacao/NFeRetAutorizacao4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:10.752Z",
+    "verificado_em": "2026-11-10T04:40:03.575Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1703,12 +2488,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.status_servico@homologacao": {
     "url": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe-homologacao.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.455Z",
+    "verificado_em": "2026-11-10T04:40:04.875Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1723,12 +2509,13 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   },
   "svrs.nfe.status_servico@producao": {
     "url": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx",
     "url_contrato": "https://nfe.svrs.rs.gov.br/ws/NfeStatusServico/NfeStatusServico4.asmx?wsdl",
-    "verificado_em": "2026-11-10T04:36:11.441Z",
+    "verificado_em": "2026-11-10T04:40:04.821Z",
     "origem": "github-actions",
     "responde": true,
     "diagnostico": "acesso_negado",
@@ -1743,6 +2530,7 @@
       "sujeito": "*.svrs.rs.gov.br",
       "emissor": "Autoridade Certificadora do SERPRO SSLv1",
       "valido_ate": "2027-07-03T17:49:30.000Z"
-    }
+    },
+    "detalhe": "403 - Forbidden: Access is denied. Server Error 403 - Forbidden: Access is denied. You do not have permission to view this directory or page using the credentia"
   }
 }
