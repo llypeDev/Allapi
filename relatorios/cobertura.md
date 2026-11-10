@@ -6,9 +6,9 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 - Última sonda: 2026-11-10
 - Endpoints no catálogo: 146
 - Confirmados em fonte oficial: 140
-- Servidor respondeu: 143
+- Servidor respondeu: 146
 - Contrato obtido: 0
-- Aprovados em tudo: 137
+- Aprovados em tudo: 140
 - URLs oficiais fora do catálogo: 412
 
 ## Arquivos
@@ -21,7 +21,7 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 | svc-an | nacional | em_andamento | 12 | 12 | 0 | passa |
 | svc-rs | nacional | em_andamento | 10 | 10 | 0 | passa |
 | svrs | nacional | em_andamento | 84 | 84 | 4 | não passa |
-| svsp | nacional | em_andamento | 16 | 13 | 20 | não passa |
+| svsp | nacional | em_andamento | 16 | 16 | 14 | não passa |
 
 ## Fontes oficiais
 
@@ -218,9 +218,9 @@ Pendências do arquivo:
 |---|---|---|---|---|---|
 | `svsp.cte.recepcao_sinc` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_sinc` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svsp.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_simp` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svsp.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_os` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_gtve` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_gtve` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
@@ -228,7 +228,7 @@ Pendências do arquivo:
 | `svsp.cte.consulta` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.status_servico` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.status_servico` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svsp.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.recepcao_evento` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svsp.cte.qrcode` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
 | `svsp.cte.qrcode` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
