@@ -149,6 +149,27 @@ export async function sondarEndpoint(
   return { resultado: { ...comum, diagnostico: "http_200_sem_contrato" } };
 }
 
+const TRANSITORIOS: ReadonlySet<Diagnostico> = new Set(["conexao_reiniciada", "timeout", "erro_rede"]);
+
+/**
+ * Repete a sonda quando a falha tem cara de transitória. Servidores fiscais derrubam conexões
+ * sob rajada; uma única queda não deve virar "servidor não respondeu" no relatório.
+ */
+export async function sondarComRepeticao(
+  servico: Servico,
+  endpoint: Endpoint,
+  opcoes: OpcoesSonda & { tentativas?: number; esperaMs?: number } = {},
+): Promise<{ resultado: ResultadoSonda; corpoContrato?: Buffer }> {
+  const tentativas = opcoes.tentativas ?? 3;
+  const esperaMs = opcoes.esperaMs ?? 2_000;
+  let ultimo = await sondarEndpoint(servico, endpoint, opcoes);
+  for (let i = 1; i < tentativas && TRANSITORIOS.has(ultimo.resultado.diagnostico); i++) {
+    await new Promise((ok) => setTimeout(ok, esperaMs * i));
+    ultimo = await sondarEndpoint(servico, endpoint, opcoes);
+  }
+  return ultimo;
+}
+
 /** Primeiras palavras visíveis de uma página de erro: ajuda a distinguir exigência de certificado de bloqueio de origem. */
 export function resumirCorpo(corpo: Buffer): string {
   return corpo

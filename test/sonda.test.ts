@@ -8,7 +8,7 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { after, before, describe, it } from "node:test";
 import type { Endpoint, Servico } from "../src/catalogo.ts";
-import { analisarOpenApi, analisarWsdl, sondarEndpoint, urlContrato } from "../src/sonda.ts";
+import { analisarOpenApi, analisarWsdl, sondarComRepeticao, sondarEndpoint, urlContrato } from "../src/sonda.ts";
 
 const WSDL = `<?xml version="1.0"?>
 <wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://exemplo/ws">
@@ -199,6 +199,50 @@ describe("portais com cookie de sessão", () => {
       assert.equal(resultado.detalhe, "403 - Forbidden: Access is denied.");
     } finally {
       servidor.close();
+    }
+  });
+});
+
+describe("falhas transitórias", () => {
+  it("repete quando o servidor derruba a conexão e aceita a resposta seguinte", async () => {
+    let chamadas = 0;
+    const servidor = http.createServer((req, res) => {
+      chamadas++;
+      if (chamadas === 1) req.socket.destroy();
+      else res.writeHead(200, { "content-type": "text/xml" }).end(WSDL);
+    });
+    const porta = await escutar(servidor);
+    try {
+      const { resultado } = await sondarComRepeticao(servico(), ep(`http://127.0.0.1:${porta}/ws/a.asmx`), { esperaMs: 10 });
+      assert.equal(resultado.diagnostico, "contrato_obtido");
+      assert.equal(chamadas, 2);
+    } finally {
+      servidor.close();
+    }
+  });
+
+  it("desiste depois do limite e não repete falha definitiva", async () => {
+    let quedas = 0;
+    const derruba = http.createServer((req) => {
+      quedas++;
+      req.socket.destroy();
+    });
+    let negadas = 0;
+    const nega = http.createServer((_req, res) => {
+      negadas++;
+      res.writeHead(403).end();
+    });
+    const [p1, p2] = [await escutar(derruba), await escutar(nega)];
+    try {
+      const a = await sondarComRepeticao(servico(), ep(`http://127.0.0.1:${p1}/a.asmx`), { tentativas: 3, esperaMs: 5 });
+      assert.equal(a.resultado.diagnostico, "conexao_reiniciada");
+      assert.equal(quedas, 3);
+      const b = await sondarComRepeticao(servico(), ep(`http://127.0.0.1:${p2}/a.asmx`), { tentativas: 3, esperaMs: 5 });
+      assert.equal(b.resultado.diagnostico, "acesso_negado");
+      assert.equal(negadas, 1);
+    } finally {
+      derruba.close();
+      nega.close();
     }
   });
 });

@@ -6,7 +6,7 @@ import type { Catalogo } from "./catalogo.ts";
 import { carregarDescartes, carregarFontes, coletarFonte } from "./coleta.ts";
 import { carregarEstado, chaveSonda, gravar, gravarFontes, gravarSondas } from "./estado.ts";
 import { analisar, gerarMarkdown } from "./relatorio.ts";
-import { emParalelo, sondarEndpoint } from "./sonda.ts";
+import { emParalelo, sondarComRepeticao } from "./sonda.ts";
 
 const RAIZ = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const ORIGEM = process.env.ORIGEM_SONDA ?? (process.env.GITHUB_ACTIONS ? "github-actions" : "local");
@@ -82,10 +82,21 @@ async function sondar(args: string[]): Promise<void> {
     return;
   }
 
-  const resultados = await emParalelo(alvos, 6, ({ servico, endpoint }) => sondarEndpoint(servico, endpoint, { origem: ORIGEM }));
+  // Um host por vez dentro de cada fila: rajadas no mesmo servidor fazem alguns derrubarem a conexão.
+  const porHost = new Map<string, typeof alvos>();
+  for (const alvo of alvos) {
+    const host = new URL(alvo.endpoint.url).host;
+    porHost.set(host, [...(porHost.get(host) ?? []), alvo]);
+  }
+  type Saida = Awaited<ReturnType<typeof sondarComRepeticao>>;
+  const saidas = new Map<(typeof alvos)[number], Saida>();
+  await emParalelo([...porHost.values()], 8, async (fila) => {
+    for (const alvo of fila) saidas.set(alvo, await sondarComRepeticao(alvo.servico, alvo.endpoint, { origem: ORIGEM }));
+  });
   const contagem = new Map<string, number>();
-  alvos.forEach(({ servico, endpoint }, i) => {
-    const { resultado, corpoContrato } = resultados[i]!;
+  alvos.forEach((alvo) => {
+    const { servico, endpoint } = alvo;
+    const { resultado, corpoContrato } = saidas.get(alvo)!;
     estado.sondas[chaveSonda(servico.id, endpoint.ambiente)] = resultado;
     contagem.set(resultado.diagnostico, (contagem.get(resultado.diagnostico) ?? 0) + 1);
     if (corpoContrato && resultado.contrato) {

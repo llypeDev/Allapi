@@ -6,6 +6,7 @@ status: em_andamento
 notas: >-
   Ambiente da SEFAZ-SP que autoriza CT-e para outras UFs e serve de contingência (SVC-SP).
   Conferido no portal DFe da SVRS e no Portal Nacional do CT-e (coleta de 2026-11-10).
+  Os endpoints SOAP respondem 403 sem certificado digital, por isso o contrato está marcado como restrito.
   Compartilha o host com os serviços próprios de São Paulo, que entram no arquivo do estado.
 atende:
   - item: documentos_fiscais.cte
@@ -33,8 +34,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSincV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -50,8 +51,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoSimpV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -67,8 +68,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoOSV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -84,8 +85,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoGTVeV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -101,8 +102,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeConsultaV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -118,8 +119,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeStatusServicoV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
@@ -135,8 +136,8 @@ servicos:
     protocolo: soap
     autenticacao: certificado_icp
     endpoints:
-      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx" }
-      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx" }
+      - { ambiente: producao, url: "https://nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx", contrato_restrito: true }
+      - { ambiente: homologacao, url: "https://homologacao.nfe.fazenda.sp.gov.br/CTeWS/WS/CTeRecepcaoEventoV4.asmx", contrato_restrito: true }
     origem:
       tipo: oficial
       registrado_em: 2026-11-10
