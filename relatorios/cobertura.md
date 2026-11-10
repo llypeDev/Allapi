@@ -6,32 +6,33 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 - Última sonda: 2026-11-10
 - Endpoints no catálogo: 146
 - Confirmados em fonte oficial: 140
-- Servidor respondeu: 118
+- Servidor respondeu: 143
 - Contrato obtido: 0
-- Aprovados em tudo: 112
-- URLs oficiais fora do catálogo: 413
+- Aprovados em tudo: 126
+- URLs oficiais fora do catálogo: 412
 
 ## Arquivos
 
 | Arquivo | Escopo | Status | Endpoints | Aprovados | Pendências | Gate |
 |---|---|---|---:|---:|---:|---|
-| an | nacional | em_andamento | 6 | 6 | 1 | não passa |
+| an | nacional | em_andamento | 6 | 6 | 0 | passa |
 | gnre | nacional | em_andamento | 6 | 0 | 13 | não passa |
 | svan | nacional | em_andamento | 12 | 12 | 0 | passa |
-| svc-an | nacional | em_andamento | 12 | 0 | 12 | não passa |
+| svc-an | nacional | em_andamento | 12 | 12 | 0 | passa |
 | svc-rs | nacional | em_andamento | 10 | 10 | 0 | passa |
 | svrs | nacional | em_andamento | 84 | 84 | 4 | não passa |
-| svsp | nacional | em_andamento | 16 | 0 | 30 | não passa |
+| svsp | nacional | em_andamento | 16 | 2 | 31 | não passa |
 
 ## Fontes oficiais
 
 | Fonte | Situação | URLs encontradas | Coletado em |
 |---|---|---:|---|
+| cte-portal-homologacao | ok | 52 | 2026-11-10 |
 | cte-portal-producao | ok | 53 | 2026-11-10 |
 | gnre-automacao | falhou (HTTP 403) | 0 | 2026-11-10 |
 | gnre-automacao-homologacao | falhou (HTTP 403) | 0 | 2026-11-10 |
 | nfe-portal-homologacao | ok | 102 | 2026-11-10 |
-| nfe-portal-producao | ok | 105 | 2026-11-10 |
+| nfe-portal-producao | ok | 104 | 2026-11-10 |
 | svrs-bpe | ok | 60 | 2026-11-10 |
 | svrs-cte | ok | 92 | 2026-11-10 |
 | svrs-mdfe | ok | 13 | 2026-11-10 |
@@ -49,11 +50,7 @@ Gerado por `npm run relatorio` a partir de `catalogo/` e `estado/`. Não editar 
 | `an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao) | sim | restrito (exige certificado) | acesso_negado |
 | `an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao) | sim | restrito (exige certificado) | acesso_negado |
 | `an.cte.distribuicao_dfe` | producao | coletada (cte-portal-producao) | sim | restrito (exige certificado) | acesso_negado |
-| `an.cte.distribuicao_dfe` | homologacao | declarada | sim | restrito (exige certificado) | acesso_negado |
-
-Pendências do arquivo:
-
-- fonte oficial lista https://www.nfe.fazenda.gov.br/agendamentosvc, que não está no catálogo
+| `an.cte.distribuicao_dfe` | homologacao | coletada (cte-portal-homologacao) | sim | restrito (exige certificado) | acesso_negado |
 
 ## Portal GNRE (`gnre`)
 
@@ -91,18 +88,18 @@ Pendências do arquivo:
 
 | Serviço | Ambiente | Fonte oficial | Responde | Contrato | Diagnóstico da sonda |
 |---|---|---|---|---|---|
-| `svc-an.nfe.autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.ret_autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.ret_autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.consulta_protocolo` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.consulta_protocolo` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.inutilizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.inutilizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.status_servico` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.status_servico` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao, svrs-nfe) | — | — | — |
-| `svc-an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | — | — | — |
+| `svc-an.nfe.autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.ret_autorizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.ret_autorizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.consulta_protocolo` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.consulta_protocolo` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.inutilizacao` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.inutilizacao` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.status_servico` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.status_servico` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.recepcao_evento` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
+| `svc-an.nfe.recepcao_evento` | homologacao | coletada (nfe-portal-homologacao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 
 ## SEFAZ Virtual de Contingência do Rio Grande do Sul (SVC-RS) (`svc-rs`)
 
@@ -149,19 +146,19 @@ Pendências do arquivo:
 | `svrs.nfce.recepcao_evento` | homologacao | coletada (svrs-nfce) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.consulta_cadastro.consulta_cadastro` | producao | coletada (nfe-portal-producao, svrs-nfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.recepcao_sinc` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.recepcao_sinc` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.recepcao_sinc` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.recepcao_simp` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.recepcao_simp` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.recepcao_os` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.recepcao_os` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.recepcao_gtve` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.recepcao_gtve` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.recepcao_gtve` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.consulta` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.consulta` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.consulta` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.status_servico` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.status_servico` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.status_servico` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.recepcao_evento` | homologacao | coletada (svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
+| `svrs.cte.recepcao_evento` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.mdfe.recepcao_sinc` | producao | coletada (svrs-mdfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.mdfe.recepcao_sinc` | homologacao | coletada (svrs-mdfe) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.mdfe.consulta` | producao | coletada (svrs-mdfe) | sim | restrito (exige certificado) | acesso_negado |
@@ -202,7 +199,7 @@ Pendências do arquivo:
 | `svrs.nfcom.status_servico` | homologacao | coletada (svrs-nfcom) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.nfcom.recepcao_evento` | producao | coletada (svrs-nfcom) | sim | restrito (exige certificado) | acesso_negado |
 | `svrs.nfcom.recepcao_evento` | homologacao | coletada (svrs-nfcom) | sim | restrito (exige certificado) | acesso_negado |
-| `svrs.cte.qrcode` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
+| `svrs.cte.qrcode` | producao | coletada (cte-portal-homologacao, cte-portal-producao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
 | `svrs.mdfe.qrcode` | producao | coletada (svrs-mdfe) | sim | não se aplica | http_200_sem_contrato |
 | `svrs.bpe.qrcode` | producao | coletada (svrs-bpe) | sim | não se aplica | http_200_sem_contrato |
 | `svrs.nf3e.qrcode` | producao | coletada (svrs-nf3e) | sim | não se aplica | http_200_sem_contrato |
@@ -219,22 +216,22 @@ Pendências do arquivo:
 
 | Serviço | Ambiente | Fonte oficial | Responde | Contrato | Diagnóstico da sonda |
 |---|---|---|---|---|---|
-| `svsp.cte.recepcao_sinc` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_sinc` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_simp` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_os` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_gtve` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_gtve` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.consulta` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.consulta` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.status_servico` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.status_servico` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.recepcao_evento` | homologacao | coletada (svrs-cte) | — | — | — |
-| `svsp.cte.qrcode` | producao | coletada (cte-portal-producao, svrs-cte) | — | — | — |
-| `svsp.cte.qrcode` | homologacao | coletada (svrs-cte) | — | — | — |
+| `svsp.cte.recepcao_sinc` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_sinc` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_simp` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_simp` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_os` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_os` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_gtve` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_gtve` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.consulta` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.consulta` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.status_servico` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.status_servico` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.recepcao_evento` | producao | coletada (cte-portal-producao, svrs-cte) | não | não obtido | conexao_reiniciada |
+| `svsp.cte.recepcao_evento` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não obtido | acesso_negado |
+| `svsp.cte.qrcode` | producao | coletada (cte-portal-producao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
+| `svsp.cte.qrcode` | homologacao | coletada (cte-portal-homologacao, svrs-cte) | sim | não se aplica | http_200_sem_contrato |
 
 Pendências do arquivo:
 
@@ -266,8 +263,8 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | http://sefaznet.ac.gov.br/nfe | nfe-portal-homologacao, nfe-portal-producao |
 | http://sistemas.sefaz.am.gov.br/nfeweb/portal/index.do | nfe-portal-homologacao, nfe-portal-producao |
 | http://www.dfe.ms.gov.br/bpe/qrcode | svrs-bpe |
-| http://www.dfe.ms.gov.br/cte/qrcode | cte-portal-producao, svrs-cte |
-| http://www.fazenda.pr.gov.br/cte/qrcode | cte-portal-producao, svrs-cte |
+| http://www.dfe.ms.gov.br/cte/qrcode | cte-portal-homologacao, cte-portal-producao, svrs-cte |
+| http://www.fazenda.pr.gov.br/cte/qrcode | cte-portal-homologacao, cte-portal-producao, svrs-cte |
 | http://www.fazenda.rj.gov.br/sefaz/faces/webcenter/faces/owresource.jspx | nfe-portal-homologacao, nfe-portal-producao |
 | http://www.fazenda.sp.gov.br/nfe | nfe-portal-homologacao, nfe-portal-producao |
 | http://www.receita.pb.gov.br/bpe/qrcode | svrs-bpe |
@@ -276,7 +273,7 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | http://www.sefaz.al.gov.br/nfe | nfe-portal-homologacao, nfe-portal-producao |
 | http://www.sefaz.ba.gov.br/scripts/default/cte.asp | cte-portal-producao |
 | http://www.sefaz.ba.gov.br/scripts/default/nfiscal.asp | nfe-portal-producao |
-| http://www.sefaz.mt.gov.br/portal/cte | cte-portal-producao |
+| http://www.sefaz.mt.gov.br/portal/cte | cte-portal-homologacao, cte-portal-producao |
 | http://www.sefaz.mt.gov.br/portal/nfe | nfe-portal-homologacao, nfe-portal-producao |
 | http://www.set.rn.gov.br/contentproducao/aplicacao/set_v2/nfe/gerados/inicio.asp | nfe-portal-homologacao, nfe-portal-producao |
 | http://www2.sefin.ro.gov.br/manual/mostrar.asp | nfe-portal-homologacao |
@@ -324,13 +321,13 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://hbpe.fazenda.mg.gov.br/bpe/services/bperecepcao | svrs-bpe |
 | https://hbpe.fazenda.mg.gov.br/bpe/services/bperecepcaoevento | svrs-bpe |
 | https://hbpe.fazenda.mg.gov.br/bpe/services/bperecepcaotm | svrs-bpe |
-| https://hcte.fazenda.mg.gov.br/cte/services/cteconsultav4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaoeventov4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaogtvev4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaoosv4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaosimpv4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaosincv4 | svrs-cte |
-| https://hcte.fazenda.mg.gov.br/cte/services/ctestatusservicov4 | svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cteconsultav4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaoeventov4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaogtvev4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaoosv4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaosimpv4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/cterecepcaosincv4 | cte-portal-homologacao, svrs-cte |
+| https://hcte.fazenda.mg.gov.br/cte/services/ctestatusservicov4 | cte-portal-homologacao, svrs-cte |
 | https://hnf3e.fazenda.mg.gov.br/nf3e/services/nf3econsulta | svrs-nf3e |
 | https://hnf3e.fazenda.mg.gov.br/nf3e/services/nf3erecepcaoevento | svrs-nf3e |
 | https://hnf3e.fazenda.mg.gov.br/nf3e/services/nf3erecepcaosinc | svrs-nf3e |
@@ -407,20 +404,20 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://homologacao.bpe.ms.gov.br/ws/bperecepcao | svrs-bpe |
 | https://homologacao.bpe.ms.gov.br/ws/bperecepcaoevento | svrs-bpe |
 | https://homologacao.bpe.ms.gov.br/ws/bpestatusservico | svrs-bpe |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cteconsultav4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaoeventov4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaogtvev4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaoosv4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaosimpv4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaosincv4 | svrs-cte |
-| https://homologacao.cte.fazenda.pr.gov.br/cte4/ctestatusservicov4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cteconsultav4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cterecepcaoeventov4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cterecepcaogtvev4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cterecepcaoosv4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cterecepcaosimpv4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/cterecepcaosincv4 | svrs-cte |
-| https://homologacao.cte.ms.gov.br/ws/ctestatusservicov4 | svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cteconsultav4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaoeventov4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaogtvev4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaoosv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaosimpv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/cterecepcaosincv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.fazenda.pr.gov.br/cte4/ctestatusservicov4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cteconsultav4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cterecepcaoeventov4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cterecepcaogtvev4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cterecepcaoosv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cterecepcaosimpv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/cterecepcaosincv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.cte.ms.gov.br/ws/ctestatusservicov4 | cte-portal-homologacao, svrs-cte |
 | https://homologacao.nf3e.fazenda.pr.gov.br/nf3e/nf3econsulta | svrs-nf3e |
 | https://homologacao.nf3e.fazenda.pr.gov.br/nf3e/nf3erecepcaoevento | svrs-nf3e |
 | https://homologacao.nf3e.fazenda.pr.gov.br/nf3e/nf3erecepcaosinc | svrs-nf3e |
@@ -457,14 +454,14 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://homologacao.sefaz.mt.gov.br/bpe-ws/services/bperecepcaoevento | svrs-bpe |
 | https://homologacao.sefaz.mt.gov.br/bpe-ws/services/bpestatusservico | svrs-bpe |
 | https://homologacao.sefaz.mt.gov.br/bpe/qrcode | svrs-bpe |
-| https://homologacao.sefaz.mt.gov.br/cte-ws/services/cterecepcaosimpv4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/cte/qrcode | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews/services/cterecepcaoosv4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews2/services/cteconsultav4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaoeventov4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaogtvev4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaosincv4 | svrs-cte |
-| https://homologacao.sefaz.mt.gov.br/ctews2/services/ctestatusservicov4 | svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/cte-ws/services/cterecepcaosimpv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/cte/qrcode | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews/services/cterecepcaoosv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews2/services/cteconsultav4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaoeventov4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaogtvev4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews2/services/cterecepcaosincv4 | cte-portal-homologacao, svrs-cte |
+| https://homologacao.sefaz.mt.gov.br/ctews2/services/ctestatusservicov4 | cte-portal-homologacao, svrs-cte |
 | https://homologacao.sefaz.mt.gov.br/nf3e/qrcode | svrs-nf3e |
 | https://homologacao.sefaz.mt.gov.br/nf3ews/services/nf3econsultanf | svrs-nf3e |
 | https://homologacao.sefaz.mt.gov.br/nf3ews/services/nf3erecepcao | svrs-nf3e |
@@ -637,9 +634,9 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://nfehomolog.sefaz.pe.gov.br/nfe-service/services/nferecepcaoevento4 | nfe-portal-homologacao, svrs-nfe |
 | https://nfehomolog.sefaz.pe.gov.br/nfe-service/services/nferetautorizacao4 | nfe-portal-homologacao, svrs-nfe |
 | https://nfehomolog.sefaz.pe.gov.br/nfe-service/services/nfestatusservico4 | nfe-portal-homologacao, svrs-nfe |
-| https://portal.fazenda.sp.gov.br/servicos/cte | cte-portal-producao |
+| https://portal.fazenda.sp.gov.br/servicos/cte | cte-portal-homologacao, cte-portal-producao |
 | https://portalbpe.fazenda.mg.gov.br/portalbpe/sistema/qrcode.xhtml | svrs-bpe |
-| https://portalcte.fazenda.mg.gov.br/portalcte/sistema/qrcode.xhtml | cte-portal-producao, svrs-cte |
+| https://portalcte.fazenda.mg.gov.br/portalcte/sistema/qrcode.xhtml | cte-portal-homologacao, cte-portal-producao, svrs-cte |
 | https://portalnfcom.fazenda.mg.gov.br/qrcode | svrs-nfcom |
 | https://portalsped.fazenda.mg.gov.br/portalnf3e/sistema/qrcode.xhtml | svrs-nf3e |
 | https://producao.cte.ms.gov.br/ws/cteconsultav4 | cte-portal-producao, svrs-cte |
@@ -655,9 +652,8 @@ Publicadas em fonte oficial coletada e ainda sem registro. Cada uma precisa vira
 | https://www.dfe.ms.gov.br/nfcom/qrcode | svrs-nfcom |
 | https://www.fazenda.pr.gov.br/bpe/qrcode | svrs-bpe |
 | https://www.google.com.br/url | nfe-portal-producao |
-| https://www.nfe.fazenda.gov.br/agendamentosvc | nfe-portal-producao |
 | https://www.sefaz.ap.gov.br/index.php/nf-e | nfe-portal-producao |
-| https://www.sefaz.ms.gov.br/documentos-fiscais-eletronicos/ct-e | cte-portal-producao |
+| https://www.sefaz.ms.gov.br/documentos-fiscais-eletronicos/ct-e | cte-portal-homologacao, cte-portal-producao |
 | https://www.sefaz.ms.gov.br/documentos-fiscais-eletronicos/nf-e | nfe-portal-homologacao, nfe-portal-producao |
 | https://www.sefaz.mt.gov.br/bpe-ws/services/bpeconsulta | svrs-bpe |
 | https://www.sefaz.mt.gov.br/bpe-ws/services/bperecepcaoevento | svrs-bpe |
